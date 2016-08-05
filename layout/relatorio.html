@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Relatorios</title>
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/bootstrap-select.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="home.html"><img src="assets/img/logo_on_transparent_254x75.png"  class="logo-home"/></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="cadastrar-projeto.html">Cadastro CTRL + C</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="consultar-projeto.html">Consultar Projetos</a></li>
+								</ul>
+							</li>
+							<li><a href="cadastro-de-indicador.html">Indicadores</a></li>
+							<li><a href="relatorio.html">Relatórios</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrar Sistema <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="cadastro-de-colaborador.html">Cadastrar colaborador</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="controlar-acesso.html">Controle de acesso</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="help.html">Help</a></li>
+							<li><a href="login.html">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="filter">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<section class="intro-page">
+								<h1 class="heading">Relátorio de Indicadores de Desempenho</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</section>
+
+
+							<form id="filter">
+								<fieldset class="row">
+
+									<div class="col-lg-12">
+										<legend><i class="glyphicon glyphicon-filter" aria-hidden="true"></i>Filtro</legend>
+									</div>
+
+									<div class="col-lg-6 group">
+										<label for="">Projetos</label>
+										<select class="form-control selectpicker">
+											<option>Projeto 1</option>
+											<option>Projeto 2</option>
+										</select>
+									</div>
+
+									<div class="col-lg-3 group">
+										<label for="">Data Inicio</label>
+										<input type="text" class="form-control data" id="" placeholder="dd/mm/aaaa">
+									</div>
+
+									<div class="col-lg-3 group">
+										<label for="">Data Fim</label>
+										<input type="text" class="form-control data" id="" placeholder="dd/mm/aaaa">
+									</div>
+
+									<div class="col-lg-3 group">
+										<label for="">Indicador de Desempenho</label>
+										<select class="form-control selectpicker">
+											<option>Baixo</option>
+											<option>Médio</option>
+											<option>Alto</option>
+										</select>
+									</div>
+
+									<div class="col-lg-3 group">
+										<label for="">Tipo de Indicador</label>
+										<select class="form-control selectpicker">
+											<option>Tipo 1</option>
+											<option>Tipo 2</option>
+										</select>
+									</div>
+								</fieldset>
+
+								<div class="text-right">
+									<button type="button" class="btn btn-default">Cancelar</button>
+									<button type="submit" class="btn btn-primary">Gerar</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.mask.js"></script>
+		<script src="assets/js/bootstrap-select.js"></script>
+		<script src="assets/js/functions.js"></script>
+	</body>
+</html>
