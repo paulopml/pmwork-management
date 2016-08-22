@@ -1,0 +1,5 @@
+package br.com.pmwork.model.nums;
+
+public enum Status {
+
+}
