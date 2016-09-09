@@ -1,8 +1,18 @@
 package br.com.pmwork.model.entity;
 
 import java.sql.Date;
+import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 import br.com.pmwork.model.nums.ClassificacaoRisco;
 import br.com.pmwork.model.nums.Status;
@@ -10,20 +20,43 @@ import br.com.pmwork.model.nums.Status;
 @Entity
 public class Projeto {
 
+	@Id	
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	@NotNull
+	@NotEmpty
 	private String nome;
+	@NotNull
+	@NotEmpty
 	private Date dataInicio;
+	@NotNull
+	@NotEmpty
 	private Date dataTermino;
 	private Date dataRealTermino;
+	@NotNull
+	@NotEmpty
 	private String descricaoEscopo;
+	@NotNull
+	@NotEmpty
 	private Double orcamentoTotal;
-	private Colaborador gerenteProjeto;
+	@NotNull
+	@ManyToMany
+	private Set<Colaborador> gerenteProjeto;
+	@NotNull
+	@Enumerated(EnumType.STRING)
 	private ClassificacaoRisco classificacaoRisco;
-	private Fase fase;
+	@ManyToMany
+	private Set<Fase> fase;
+	@NotNull
+	@Enumerated(EnumType.STRING)
 	private Status status;
-	private Equipe equipe;
-	private Indicadores indicadores;
-	private Atividade atividade;
+	@ManyToMany
+	private Set<Equipe> equipe;
+	@ManyToMany
+	private Set<Indicadores> indicadores;
+	@ManyToMany
+	private Set<Atividade> atividade;
+	
 	private String justificativa;
 	private Date dataUltAlteracao;
 	
@@ -69,22 +102,16 @@ public class Projeto {
 	public void setOrcamentoTotal(Double orcamentoTotal) {
 		this.orcamentoTotal = orcamentoTotal;
 	}
-	public Colaborador getGerenteProjeto() {
+	public Set<Colaborador> getGerenteProjeto() {
 		return gerenteProjeto;
 	}
-	public void setGerenteProjeto(Colaborador gerenteProjeto) {
+	public void setGerenteProjeto(Set<Colaborador> gerenteProjeto) {
 		this.gerenteProjeto = gerenteProjeto;
 	}
-	public ClassificacaoRisco getClassificacaoRisco() {
-		return classificacaoRisco;
-	}
-	public void setClassificacaoRisco(ClassificacaoRisco classificacaoRisco) {
-		this.classificacaoRisco = classificacaoRisco;
-	}
-	public Fase getFase() {
+	public Set<Fase> getFase() {
 		return fase;
 	}
-	public void setFase(Fase fase) {
+	public void setFase(Set<Fase> fase) {
 		this.fase = fase;
 	}
 	public Status getStatus() {
@@ -93,25 +120,25 @@ public class Projeto {
 	public void setStatus(Status status) {
 		this.status = status;
 	}
-	public Equipe getEquipe() {
+	
+	public Set<Equipe> getEquipe() {
 		return equipe;
 	}
-	public void setEquipe(Equipe equipe) {
+	public void setEquipe(Set<Equipe> equipe) {
 		this.equipe = equipe;
 	}
-	public Indicadores getIndicadores() {
+	public Set<Indicadores> getIndicadores() {
 		return indicadores;
 	}
-	public void setIndicadores(Indicadores indicadores) {
+	public void setIndicadores(Set<Indicadores> indicadores) {
 		this.indicadores = indicadores;
 	}
-	public Atividade getAtividade() {
+	public Set<Atividade> getAtividade() {
 		return atividade;
 	}
-	public void setAtividade(Atividade atividade) {
+	public void setAtividade(Set<Atividade> atividade) {
 		this.atividade = atividade;
 	}
-	
 	public String getJustificativa() {
 		return justificativa;
 	}
@@ -123,6 +150,12 @@ public class Projeto {
 	}
 	public void setDataUltAlteracao(Date dataUltAlteracao) {
 		this.dataUltAlteracao = dataUltAlteracao;
+	}	
+	public ClassificacaoRisco getClassificacaoRisco() {
+		return classificacaoRisco;
+	}
+	public void setClassificacaoRisco(ClassificacaoRisco classificacaoRisco) {
+		this.classificacaoRisco = classificacaoRisco;
 	}
 	@Override
 	public int hashCode() {
@@ -159,7 +192,7 @@ public class Projeto {
 				return false;
 		} else if (!atividade.equals(other.atividade))
 			return false;
-		if (classificacaoRisco != other.classificacaoRisco)
+	    if (classificacaoRisco != other.classificacaoRisco)
 			return false;
 		if (dataInicio == null) {
 			if (other.dataInicio != null)

@@ -1,18 +1,36 @@
 package br.com.pmwork.model.entity;
 
 import java.sql.Date;
+import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 public class Colaborador {
 
+	@Id	
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	@NotNull
+	@NotEmpty
 	private String nome;
+	@NotNull
+	@NotEmpty
 	private Date dataNascimento;
+	@NotNull
+	@NotEmpty
 	private Date dataAdmissao;
 	private boolean sexo;
-	private Acesso cargo;
+	
+	@ManyToMany
+	private Set<Acesso> cargo;
 	public Long getId() {
 		return id;
 	}
@@ -43,10 +61,11 @@ public class Colaborador {
 	public void setSexo(boolean sexo) {
 		this.sexo = sexo;
 	}
-	public Acesso getCargo() {
+
+	public Set<Acesso> getCargo() {
 		return cargo;
 	}
-	public void setCargo(Acesso cargo) {
+	public void setCargo(Set<Acesso> cargo) {
 		this.cargo = cargo;
 	}
 	@Override

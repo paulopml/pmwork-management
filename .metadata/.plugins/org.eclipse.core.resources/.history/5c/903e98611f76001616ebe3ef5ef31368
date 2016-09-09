@@ -1,0 +1,5 @@
+package br.com.pmwork.controllers;
+
+public class ColaboradorController {
+
+}

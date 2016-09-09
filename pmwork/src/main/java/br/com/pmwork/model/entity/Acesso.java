@@ -1,11 +1,21 @@
 package br.com.pmwork.model.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 public class Acesso {
 
+	@Id	
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	@NotNull
+	@NotEmpty
 	private String cargo;
 	private boolean incluirProjetos;
 	private boolean cadastrarIndicador;
@@ -21,6 +31,7 @@ public class Acesso {
 	private boolean visualizarProjetos;
 	private boolean manterColaborador;
 	private boolean classificarRisco;
+	
 	public Long getId() {
 		return id;
 	}

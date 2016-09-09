@@ -34,7 +34,7 @@ public class ConfigDB {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() throws Exception {
 		LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactoryBean.setDataSource(dataSource());
-		entityManagerFactoryBean.setPackagesToScan("br.com.paulo.pizzaria.model.entity");
+		entityManagerFactoryBean.setPackagesToScan("br.com.pmwork.model.entity");
 		entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistenceProvider.class);
 		entityManagerFactoryBean.setJpaDialect(hibernateJpaDialect());
 		

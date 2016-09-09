@@ -1,22 +1,36 @@
 package br.com.pmwork.model.entity;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 public class Equipe {
 
+	@Id	
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	private Colaborador colaboradores;
+	
+	@NotNull
+	@ManyToMany
+	private Set<Colaborador> colaboradores;
 	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public Colaborador getColaboradores() {
+	public Set<Colaborador> getColaboradores() {
 		return colaboradores;
 	}
-	public void setColaboradores(Colaborador colaboradores) {
+	public void setColaboradores(Set<Colaborador> colaboradores) {
 		this.colaboradores = colaboradores;
 	}
 	@Override

@@ -1,15 +1,31 @@
 package br.com.pmwork.model.entity;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 public class Atividade {
 
+	@Id	
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	@NotNull
+	@NotEmpty
 	private String nomeAtividade;
+	@NotNull
+	@NotEmpty
 	private String descricao;
 	private String estimativa;
-	private Colaborador responsavel;
+	@ManyToMany
+	private Set<Colaborador> responsavel;
 	private String faseAtual;
 	public Long getId() {
 		return id;
@@ -35,10 +51,11 @@ public class Atividade {
 	public void setEstimativa(String estimativa) {
 		this.estimativa = estimativa;
 	}
-	public Colaborador getResponsavel() {
+
+	public Set<Colaborador> getResponsavel() {
 		return responsavel;
 	}
-	public void setResponsavel(Colaborador responsavel) {
+	public void setResponsavel(Set<Colaborador> responsavel) {
 		this.responsavel = responsavel;
 	}
 	public String getFaseAtual() {

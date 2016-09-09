@@ -1,6 +1,0 @@
-package br.com.pmwork.model.nums;
-
-public enum Status {
-	EM_ANÁLISE, ANÁLISE_REALIZADA, ANÁLISE_APROVADA, INICIADO, PLANEJADO, EM_ANDAMENTO, ENCERRADO, CANCELADO
-
-}

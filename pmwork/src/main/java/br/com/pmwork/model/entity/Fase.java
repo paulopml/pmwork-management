@@ -2,13 +2,27 @@ package br.com.pmwork.model.entity;
 
 import java.sql.Date;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 public class Fase {
 
+	@Id	
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	@NotNull
+	@NotEmpty
 	private String nomeFase;
+	@NotNull
+	@NotEmpty
 	private Date dataInicio;
+	@NotNull
+	@NotEmpty
 	private Date dataTermino;
 	
 	public Long getId() {
