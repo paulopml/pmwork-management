@@ -18,6 +18,11 @@ public class Indicadores {
 	@NotNull
 	@NotEmpty
 	private String nomeIndicador;
+	
+	@NotNull
+	@NotEmpty
+	private String tipoIndicador;
+	
 	public Long getId() {
 		return id;
 	}
@@ -30,11 +35,20 @@ public class Indicadores {
 	public void setNomeIndicador(String nomeIndicador) {
 		this.nomeIndicador = nomeIndicador;
 	}
+		
+	public String getTipoIndicador() {
+		return tipoIndicador;
+	}
+	public void setTipoIndicador(String tipoIndicador) {
+		this.tipoIndicador = tipoIndicador;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((nomeIndicador == null) ? 0 : nomeIndicador.hashCode());
+		result = prime * result + ((tipoIndicador == null) ? 0 : tipoIndicador.hashCode());
 		return result;
 	}
 	@Override
@@ -46,10 +60,20 @@ public class Indicadores {
 		if (getClass() != obj.getClass())
 			return false;
 		Indicadores other = (Indicadores) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
 		if (nomeIndicador == null) {
 			if (other.nomeIndicador != null)
 				return false;
 		} else if (!nomeIndicador.equals(other.nomeIndicador))
+			return false;
+		if (tipoIndicador == null) {
+			if (other.tipoIndicador != null)
+				return false;
+		} else if (!tipoIndicador.equals(other.tipoIndicador))
 			return false;
 		return true;
 	}
