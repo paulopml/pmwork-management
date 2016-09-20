@@ -18,16 +18,6 @@
 			</style>		 	
 		</head>
 		<body>
-			<c:if test="${not empty mensagemErro}">
-				<div class="container">
-					<div class="alert alert-danger">${mensagemErro}</div>
-				</div>
-			</c:if>
-			<c:if test="${not empty mensagemInfo}">
-				<div class="container">
-					<div class="alert alert-info">${mensagemInfo}</div>
-				</div>
-			</c:if>
 		<header>
 			<nav class="navbar navbar-default">
 				<div class="container">
@@ -41,8 +31,6 @@
 						</button>
 						<a class="navbar-brand" href="home.html"><img src="${path}/static/bootstrap/img/logo_on_transparent_254x75.png"  class="logo-home"/></a>
 					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li class="dropdown">
@@ -95,9 +83,10 @@
 
 									<div class="col-lg-2 group">
 										<label for="">Tipo de Indicador</label>
-										<select class="form-control selectpicker">
-											<option>Tipo 1</option>
-											<option>Tipo 2</option>
+										<select id="tipoIndicador" name="tipoIndicador" class="form-control">
+											<c:forEach items="${indicadores}" var="indicadores">
+												<option value="${indicadores.tipoIndicador}">${indicadores.tipoIndicador}</option>
+											</c:forEach>											
 										</select>
 									</div>
 								</fieldset>
@@ -112,6 +101,16 @@
 					</div>
 				</div>
 			</section>
+			<c:if test="${not empty mensagemErro}">
+				<div class="container">
+					<div class="alert alert-danger">${mensagemErro}</div>
+				</div>
+			</c:if>
+			<c:if test="${not empty mensagemInfo}">
+				<div class="container">
+					<div class="alert alert-info">${mensagemInfo}</div>
+				</div>
+			</c:if>
 			<section>
 				<div class="container">
 					<div class="row">
@@ -132,7 +131,7 @@
 											<td>${indicadores.nomeIndicador}</td>
 											<td>${indicadores.tipoIndicador}</td>
 											<td><button type="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td>
-											<td><button type="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
+											<td><button type="button" data-toggle="modal" data-target="#modal-del-indicador"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
 										</tr>
 									</c:forEach>
 								</tbody>
@@ -143,24 +142,8 @@
 				</div>
 			</section>
 		</main>
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-			<div class="modal-dialog modal-sm">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title">Confirmação</h4>
-					</div>
-					<div class="modal-body">
-						<p>deseja remover o colaborador <strong>xxxxxxxxx</strong></p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
-						<button type="button" class="btn btn-primary">Sim</button>
-					</div>
-				</div>
-			</div>
-		</div>
 		<jsp:include page="modal-cad-indicador.jsp"/>
+		<jsp:include page="modal-del-indicador.jsp"/>
 		<script type="text/javascript" src="${path}/static/js/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/jquery.mask.js"></script>

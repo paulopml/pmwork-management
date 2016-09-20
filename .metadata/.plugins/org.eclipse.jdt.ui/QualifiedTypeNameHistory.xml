@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="br.com.pmwork.model.repositories.IndicadoresRepositories"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 <fullyQualifiedTypeName name="br.com.pmwork.model.entity.Indicadores"/>
-<fullyQualifiedTypeName name="org.springframework.validation.FieldError"/>
 <fullyQualifiedTypeName name="javax.validation.Valid"/>
 <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
-<fullyQualifiedTypeName name="br.com.pmwork.model.repositories.IndicadoresRepositories"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
+<fullyQualifiedTypeName name="org.springframework.validation.FieldError"/>
 </qualifiedTypeNameHistroy>

@@ -20,11 +20,15 @@
 					<input id="nomeIndicador" name="nomeIndicador" class="form-control">
 					
 					<label for=tipoIndicador>Tipo indicador:</label>
-					<input id="tipoIndicador" name="tipoIndicador" class="form-control">
+					<select id="tipoIndicador" name="tipoIndicador" class="form-control">
+						<c:forEach items="${indicadores}" var="indicadores">
+							<option value="${indicadores.tipoIndicador}">${indicadores.tipoIndicador}</option>
+						</c:forEach>											
+					</select>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-					<button type="button" class="btn btn-primary">Gravar</button>
+					<button type="submit" class="btn btn-primary">Gravar</button>
 				</div>
 			</form>
 		</div>
