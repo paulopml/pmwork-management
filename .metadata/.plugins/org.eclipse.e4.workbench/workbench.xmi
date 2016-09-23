@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_1940cX4MEeanqbJv-FDBLA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_1940cn4MEeanqbJv-FDBLA" bindingContexts="_1940dH4MEeanqbJv-FDBLA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ConfigDB.java&quot; tooltip=&quot;pmwork/src/main/java/br/com/pmwork/config/ConfigDB.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/java/br/com/pmwork/config/ConfigDB.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;modal-cad-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/modal-cad-indicador.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/modal-cad-indicador.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;modal-del-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/modal-del-indicador.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/modal-del-indicador.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;listagem.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/listagem.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/listagem.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IndicadorController.java&quot; tooltip=&quot;pmwork/src/main/java/br/com/pmwork/controllers/IndicadorController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/java/br/com/pmwork/controllers/IndicadorController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IndicadorInvalidoException.java&quot; tooltip=&quot;pmwork/src/main/java/br/com/pmwork/exception/IndicadorInvalidoException.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/java/br/com/pmwork/exception/IndicadorInvalidoException.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;indicador.js&quot; tooltip=&quot;pmwork/src/main/webapp/static/js/indicador.js&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/webapp/static/js/indicador.js&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;tabela-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/tabela-indicador.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/tabela-indicador.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ConfigDB.java&quot; tooltip=&quot;pmwork/src/main/java/br/com/pmwork/config/ConfigDB.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/java/br/com/pmwork/config/ConfigDB.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;modal-cad-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/modal-cad-indicador.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/modal-cad-indicador.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;modal-del-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/modal-del-indicador.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/modal-del-indicador.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;listagem.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/listagem.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/listagem.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IndicadorController.java&quot; tooltip=&quot;pmwork/src/main/java/br/com/pmwork/controllers/IndicadorController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/pmwork/src/main/java/br/com/pmwork/controllers/IndicadorController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_1940cn4MEeanqbJv-FDBLA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_2kceIn4MEeanqbJv-FDBLA" label="%trimmedwindow.label.eclipseSDK" x="-70" y="-18" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_1940cn4MEeanqbJv-FDBLA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_2kceIn4MEeanqbJv-FDBLA" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -162,7 +162,7 @@
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
           <tags>persp.perspSC:org.eclipse.wst.jsdt.ui.JavaPerspective</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_QK6iAX4NEeadLIwzaqRfrw" selectedElement="_QK6iC34NEeadLIwzaqRfrw" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_QK6iAn4NEeadLIwzaqRfrw" containerData="2500" selectedElement="_QK6iA34NEeadLIwzaqRfrw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_QK6iAn4NEeadLIwzaqRfrw" containerData="2204" selectedElement="_QK6iA34NEeadLIwzaqRfrw">
               <children xsi:type="basic:PartStack" xmi:id="_QK6iA34NEeadLIwzaqRfrw" elementId="left" containerData="6000" selectedElement="_QK6iBH4NEeadLIwzaqRfrw">
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_QK6iBH4NEeadLIwzaqRfrw" elementId="org.eclipse.jdt.ui.PackageExplorer" ref="_QKxYEH4NEeadLIwzaqRfrw"/>
@@ -175,8 +175,8 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_QK6iCn4NEeadLIwzaqRfrw" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_QK4s0H4NEeadLIwzaqRfrw"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_QK6iC34NEeadLIwzaqRfrw" containerData="7500" selectedElement="_QK6iDH4NEeadLIwzaqRfrw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_QK6iDH4NEeadLIwzaqRfrw" containerData="6938" selectedElement="_QK6iDX4NEeadLIwzaqRfrw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_QK6iC34NEeadLIwzaqRfrw" containerData="7796" selectedElement="_QK6iFX4NEeadLIwzaqRfrw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_QK6iDH4NEeadLIwzaqRfrw" containerData="6715" selectedElement="_QK6iDX4NEeadLIwzaqRfrw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_QK6iDX4NEeadLIwzaqRfrw" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_25Kw8H4MEeanqbJv-FDBLA"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_QK6iDn4NEeadLIwzaqRfrw" visible="false" containerData="2500" selectedElement="_QK6iEX4NEeadLIwzaqRfrw">
                   <children xsi:type="basic:PartStack" xmi:id="_QK6iD34NEeadLIwzaqRfrw" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" visible="false" containerData="5000" selectedElement="_QK6iEH4NEeadLIwzaqRfrw">
@@ -192,8 +192,9 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_QK6iFX4NEeadLIwzaqRfrw" elementId="bottom" containerData="3062" selectedElement="_QK6iGn4NEeadLIwzaqRfrw">
+              <children xsi:type="basic:PartStack" xmi:id="_QK6iFX4NEeadLIwzaqRfrw" elementId="bottom" containerData="3285" selectedElement="_QK6iGn4NEeadLIwzaqRfrw">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_QK6iFn4NEeadLIwzaqRfrw" elementId="org.eclipse.ui.views.ProblemView" ref="_27EOZn4MEeanqbJv-FDBLA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_QK6iF34NEeadLIwzaqRfrw" elementId="org.eclipse.jdt.ui.JavadocView" ref="_QKymMH4NEeadLIwzaqRfrw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_QK6iGH4NEeadLIwzaqRfrw" elementId="org.eclipse.jdt.ui.SourceView" ref="_QKzNQH4NEeadLIwzaqRfrw"/>
@@ -226,35 +227,44 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_25Kw8H4MEeanqbJv-FDBLA" elementId="org.eclipse.ui.editorss" selectedElement="_25Kw8X4MEeanqbJv-FDBLA">
-      <children xsi:type="basic:PartStack" xmi:id="_25Kw8X4MEeanqbJv-FDBLA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Z_k58H7REeagBbmso2F8Ag">
+      <children xsi:type="basic:PartStack" xmi:id="_25Kw8X4MEeanqbJv-FDBLA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_O9WIQH-lEeavXrjWLC4jJA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_N2aL8H4REea3baI6-Q2E9Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="IndicadorController.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IndicadorController.java&quot; partName=&quot;IndicadorController.java&quot; title=&quot;IndicadorController.java&quot; tooltip=&quot;pmwork/src/main/java/br/com/pmwork/controllers/IndicadorController.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/java/br/com/pmwork/controllers/IndicadorController.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1584&quot; selectionTopPixel=&quot;252&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;IndicadorController.java&quot; partName=&quot;IndicadorController.java&quot; title=&quot;IndicadorController.java&quot; tooltip=&quot;pmwork/src/main/java/br/com/pmwork/controllers/IndicadorController.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/java/br/com/pmwork/controllers/IndicadorController.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1618&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_wKrbgH4TEea3baI6-Q2E9Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="listagem.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;listagem.jsp&quot; partName=&quot;listagem.jsp&quot; title=&quot;listagem.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/listagem.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/listagem.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4151&quot; selectionTopPixel=&quot;1259&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;listagem.jsp&quot; partName=&quot;listagem.jsp&quot; title=&quot;listagem.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/listagem.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/listagem.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4720&quot; selectionTopPixel=&quot;300&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_Ykh4QH7REeagBbmso2F8Ag" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="modal-del-indicador.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;modal-del-indicador.jsp&quot; partName=&quot;modal-del-indicador.jsp&quot; title=&quot;modal-del-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/modal-del-indicador.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/modal-del-indicador.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;587&quot; selectionTopPixel=&quot;34&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;modal-del-indicador.jsp&quot; partName=&quot;modal-del-indicador.jsp&quot; title=&quot;modal-del-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/modal-del-indicador.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/modal-del-indicador.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;11&quot; selectionOffset=&quot;1068&quot; selectionTopPixel=&quot;34&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_Z_k58H7REeagBbmso2F8Ag" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="modal-cad-indicador.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;modal-cad-indicador.jsp&quot; partName=&quot;modal-cad-indicador.jsp&quot; title=&quot;modal-cad-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/modal-cad-indicador.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/modal-cad-indicador.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;724&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;modal-cad-indicador.jsp&quot; partName=&quot;modal-cad-indicador.jsp&quot; title=&quot;modal-cad-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/modal-cad-indicador.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/modal-cad-indicador.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;681&quot; selectionTopPixel=&quot;90&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_SDn9sH-aEeavXrjWLC4jJA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="tabela-indicador.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;tabela-indicador.jsp&quot; partName=&quot;tabela-indicador.jsp&quot; title=&quot;tabela-indicador.jsp&quot; tooltip=&quot;pmwork/src/main/webapp/WEB-INF/indicador/tabela-indicador.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/webapp/WEB-INF/indicador/tabela-indicador.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1344&quot; selectionTopPixel=&quot;150&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_O9WIQH-lEeavXrjWLC4jJA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="indicador.js" iconURI="platform:/plugin/org.eclipse.wst.jsdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;indicador.js&quot; partName=&quot;indicador.js&quot; title=&quot;indicador.js&quot; tooltip=&quot;pmwork/src/main/webapp/static/js/indicador.js&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/pmwork/src/main/webapp/static/js/indicador.js&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;80&quot; selectionOffset=&quot;417&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.wst.jsdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -324,6 +334,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_Xf6kMH4OEea3baI6-Q2E9Q" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -407,7 +419,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2laHcn4MEeanqbJv-FDBLA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_UW8IYH7PEeagBbmso2F8Ag" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_1_pxSn4MEeanqbJv-FDBLA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7NK2UIE5Eeante5wJpRiKw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_1_pxSn4MEeanqbJv-FDBLA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2laHc34MEeanqbJv-FDBLA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -440,7 +452,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2laHd34MEeanqbJv-FDBLA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_UXBA4H7PEeagBbmso2F8Ag" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_1_pw8X4MEeanqbJv-FDBLA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7NPu0IE5Eeante5wJpRiKw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_1_pw8X4MEeanqbJv-FDBLA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2laHeH4MEeanqbJv-FDBLA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

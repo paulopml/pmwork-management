@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	
+	$('#btn-salvar').on('click', function(){
+		var dadosIndicador = $('#form-indicador').serialize();
+		
+		$.post(url, dadosIndicador)
+			.done(function(){
+				alert('Indicador salvo com sucesso!');
+			})
+			.fail(function(){
+				alert('Erro ao salvar');
+			});
+	});
+});

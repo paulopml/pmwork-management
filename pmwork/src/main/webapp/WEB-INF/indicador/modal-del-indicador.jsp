@@ -17,7 +17,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
-							<button type="submit" class="btn btn-primary">Sim</button>
+							<button type="submit" class="btn btn-primary btn-deletar">Sim</button>
 						</div>
 					</form>
 				</div>

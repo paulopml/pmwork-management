@@ -111,40 +111,14 @@
 					<div class="alert alert-info">${mensagemInfo}</div>
 				</div>
 			</c:if>
-			<section>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8">
-							<h4>Resultado</h4>
-							<table class="table">
-								<thead>
-									<tr>
-										<th>#</th>
-										<th>Nome do indicador</th>
-										<th>Tipo de indicador</th>
-									</tr>
-								</thead>
-								<tbody>
-									<c:forEach items="${indicadores}" var="indicadores">
-										<tr>
-											<th scope="row">${indicadores.id}</th>
-											<td>${indicadores.nomeIndicador}</td>
-											<td>${indicadores.tipoIndicador}</td>
-											<td><button type="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td>
-											<td><button type="button" data-toggle="modal" data-target="#modal-del-indicador"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
-										</tr>
-									</c:forEach>
-								</tbody>
-							</table>
-
-						</div>
-					</div>
-				</div>
+			<section id="section-indicador">
+				<jsp:include page="tabela-indicador.jsp"/>
 			</section>
 		</main>
 		<jsp:include page="modal-cad-indicador.jsp"/>
 		<jsp:include page="modal-del-indicador.jsp"/>
 		<script type="text/javascript" src="${path}/static/js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="${path}/static/js/indicador.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/jquery.mask.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap-select.js"></script>

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import br.com.pmwork.exception.IndicadorInvalidoException;
 import br.com.pmwork.model.entity.Indicadores;
 import br.com.pmwork.model.repositories.IndicadoresRepositories;
 
@@ -30,19 +31,16 @@ public class IndicadorController {
 		return "indicador/listagem";
 	}
 	@RequestMapping(method = RequestMethod.POST)
-	public String salvarIndicador(@Valid @ModelAttribute Indicadores indicadores, BindingResult bindingResult,
-			RedirectAttributes redirectAttributes){
+	public String salvarIndicador(@Valid @ModelAttribute Indicadores indicadores, BindingResult bindingResult, Model model){
 		
 		if(bindingResult.hasErrors()){
-			FieldError error = bindingResult.getFieldErrors().get(0);
-			redirectAttributes.addFlashAttribute("mensagemErro", "Não foi possível salvar o indicador, existem campos vazios ");
+			throw new IndicadorInvalidoException();
 		}
 		else{
 			indicadoresRepositorio.save(indicadores);
-			redirectAttributes.addFlashAttribute("mensagemInfo", "O indicador foi salvo com sucesso.");
 		}
-				
-		return "redirect:/app/indicador";
+		model.addAttribute("indicadores", indicadoresRepositorio.findAll());
+		return "indicador/tabela-indicador";
 	}
 
 }

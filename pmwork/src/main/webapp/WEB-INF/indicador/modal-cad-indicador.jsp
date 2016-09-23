@@ -7,7 +7,7 @@
 <div class="modal fade" id="modal-cad-indicador" tabindex="-1" role="dialog">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
-			<form method="post">
+			<form id="form-indicador" method="post">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
@@ -20,15 +20,12 @@
 					<input id="nomeIndicador" name="nomeIndicador" class="form-control">
 					
 					<label for=tipoIndicador>Tipo indicador:</label>
-					<select id="tipoIndicador" name="tipoIndicador" class="form-control">
-						<c:forEach items="${indicadores}" var="indicadores">
-							<option value="${indicadores.tipoIndicador}">${indicadores.tipoIndicador}</option>
-						</c:forEach>											
-					</select>
+					<input id="tipoIndicador" name="tipoIndicador" class="form-control">
+						
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-					<button type="submit" class="btn btn-primary">Gravar</button>
+					<button id="btn-salvar" type="button" class="btn btn-primary">Gravar</button>
 				</div>
 			</form>
 		</div>
