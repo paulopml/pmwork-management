@@ -21,7 +21,8 @@
 					
 					<label for=tipoIndicador>Tipo indicador:</label>
 					<input id="tipoIndicador" name="tipoIndicador" class="form-control">
-						
+					
+					<input id="id" name="id" type="hidden">	
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>

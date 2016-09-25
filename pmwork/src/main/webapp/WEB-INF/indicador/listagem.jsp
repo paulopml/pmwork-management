@@ -116,7 +116,6 @@
 			</section>
 		</main>
 		<jsp:include page="modal-cad-indicador.jsp"/>
-		<jsp:include page="modal-del-indicador.jsp"/>
 		<script type="text/javascript" src="${path}/static/js/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="${path}/static/js/indicador.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap.min.js"></script>
