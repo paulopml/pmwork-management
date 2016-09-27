@@ -13,22 +13,15 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-default">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="home.html"><img src="assets/img/logo_on_transparent_254x75.png"  class="logo-home"/></a>
-					</div>
-
+					<h5>
+							<a href="home.html"><img src="assets/img/logo_on_transparent_254x75.png"  class="logo-home"/></a>
+							Gerenciamento de Projetos
+					</h5>
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
+					<div class="masthead" id="bs-example-navbar-collapse-1">
+						<ul class="nav nav-justified">
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos <span class="caret"></span></a>
 								<ul class="dropdown-menu">
@@ -47,17 +40,13 @@
 									<li><a href="controlar-acesso.html">Controle de acesso</a></li>
 								</ul>
 							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
 							<li><a href="help.html">Help</a></li>
-							<li><a href="login.html">Logout</a></li>
+							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 						</ul>
 					</div>
 				</div>
-			</nav>
 		</header>
 		<main>
-			<section class="filter">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -65,15 +54,11 @@
 								<h1 class="heading">Relátorio de Indicadores de Desempenho</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 							</section>
-
-
-							<form id="filter">
+							<form id="filter" class="filter">
 								<fieldset class="row">
-
 									<div class="col-lg-12">
 										<legend><i class="glyphicon glyphicon-filter" aria-hidden="true"></i>Filtro</legend>
 									</div>
-
 									<div class="col-lg-6 group">
 										<label for="">Projetos</label>
 										<select class="form-control selectpicker">
@@ -118,8 +103,6 @@
 						</div>
 					</div>
 				</div>
-			</section>
-
 		</main>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

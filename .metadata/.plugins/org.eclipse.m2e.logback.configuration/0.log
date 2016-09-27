@@ -728,3 +728,67 @@ java.io.StreamCorruptedException: invalid stream header: 00000000
 2016-09-25 02:23:48,317 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
 2016-09-25 02:23:55,848 [Worker-95] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\projetos\pmwork\pmwork
 2016-09-25 02:23:55,848 [Worker-95] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package jetty:run
+2016-09-26 23:55:22,564 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:55:22,591 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-26 23:55:22,595 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:55:22,604 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-26 23:55:26,988 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:55:27,014 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-26 23:55:27,037 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:55:27,046 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-26 23:55:55,283 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:55:55,295 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-26 23:55:55,297 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:55:55,302 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-26 23:56:03,012 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:56:03,023 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-26 23:56:03,024 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:56:03,033 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-26 23:57:55,651 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:57:55,669 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-26 23:57:55,670 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:57:55,714 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-26 23:58:33,516 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:58:33,528 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-26 23:58:33,535 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-26 23:58:33,542 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-26 23:58:53,843 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\projetos\pmwork\pmwork
+2016-09-26 23:58:53,844 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package jetty:run
+2016-09-27 00:00:15,690 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:00:15,705 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-27 00:00:15,714 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:00:15,730 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-27 00:03:16,998 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:03:17,010 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-27 00:03:17,054 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:03:17,074 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-27 00:03:20,371 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\projetos\pmwork\pmwork
+2016-09-27 00:03:20,371 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package jetty:run
+2016-09-27 00:05:05,486 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:05:05,498 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-27 00:05:05,509 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:05:05,516 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-27 00:05:25,524 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:05:25,535 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-27 00:05:25,537 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:05:25,544 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-27 00:05:27,650 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:05:27,663 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-27 00:05:27,671 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:05:27,678 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-27 00:06:29,114 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:06:29,121 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-27 00:06:29,123 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:06:29,130 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-27 00:06:33,493 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\projetos\pmwork\pmwork
+2016-09-27 00:06:33,494 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package jetty:run
+2016-09-27 00:08:12,108 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:08:12,122 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-27 00:08:12,131 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:08:12,145 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources
+2016-09-27 00:08:45,797 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\projetos\pmwork\pmwork
+2016-09-27 00:08:45,797 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B package jetty:run
+2016-09-27 00:10:28,021 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:10:28,037 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-09-27 00:10:28,045 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-27 00:10:28,052 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos\pmwork\pmwork\src\test\resources

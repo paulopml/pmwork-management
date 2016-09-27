@@ -18,21 +18,14 @@
 			</style>		 	
 		</head>
 		<body>
-		<header>
-			<nav class="navbar navbar-default">
+			<header>
 				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="home.html"><img src="${path}/static/bootstrap/img/logo_on_transparent_254x75.png"  class="logo-home"/></a>
-					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
+					<h5>
+						<a href="home.html"><img src="${path}/static/bootstrap/img/logo_on_transparent_254x75.png"  class="logo-home"/></a>
+							Gerenciamento de Projetos
+					</h5>
+					<div class="masthead" id="bs-example-navbar-collapse-1">
+						<ul class="nav nav-justified">
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos <span class="caret"></span></a>
 								<ul class="dropdown-menu">
@@ -51,56 +44,51 @@
 									<li><a href="controlar-acesso.html">Controle de acesso</a></li>
 								</ul>
 							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
 							<li><a href="help.html">Help</a></li>
-							<li><a href="login.html">Logout</a></li>
+							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 						</ul>
 					</div>
 				</div>
-			</nav>
 		</header>
 		<main>
-			<section class="filter">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<section class="intro-page">
-								<h1 class="heading">Cadastro de indicador de desempenho</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-							</section>
-							<form id="filter">
-								<fieldset class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<section class="intro-page">
+							<h1 class="heading">Cadastro de indicador de desempenho</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</section>
+						<form id="filter" class="filter">
+							<fieldset class="row">
 
-									<div class="col-lg-12">
-										<legend><i class="glyphicon glyphicon-filter" aria-hidden="true"></i>Filtro</legend>
-									</div>
-
-									<div class="col-lg-4 group">
-										<label for="">Nome do Indicador</label>
-										<input type="text" class="form-control" id="" placeholder="Nome do Indicador">
-									</div>
-
-									<div class="col-lg-2 group">
-										<label for="">Tipo de Indicador</label>
-										<select id="tipoIndicador" name="tipoIndicador" class="form-control">
-											<c:forEach items="${indicadores}" var="indicadores">
-												<option value="${indicadores.tipoIndicador}">${indicadores.tipoIndicador}</option>
-											</c:forEach>											
-										</select>
-									</div>
-								</fieldset>
-
-								<div class="text-right">
-									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-cad-indicador">Cadastrar</button>						
-									<button type="submit" class="btn btn-primary">Filtrar</button>
-									<button type="button" class="btn btn-default">Limpar</button>
+								<div class="col-lg-12">
+									<legend><i class="glyphicon glyphicon-filter" aria-hidden="true"></i>Filtro</legend>
 								</div>
-							</form>
-						</div>
+
+								<div class="col-lg-4 group">
+									<label for="">Nome do Indicador</label>
+									<input type="text" class="form-control" id="" placeholder="Nome do Indicador">
+								</div>
+
+								<div class="col-lg-2 group">
+									<label for="">Tipo de Indicador</label>
+									<select id="tipoIndicador" name="tipoIndicador" class="form-control">
+										<c:forEach items="${indicadores}" var="indicadores">
+											<option value="${indicadores.tipoIndicador}">${indicadores.tipoIndicador}</option>
+										</c:forEach>											
+									</select>
+								</div>
+							</fieldset>
+
+							<div class="text-right">
+								<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-cad-indicador">Cadastrar</button>						
+								<button type="submit" class="btn btn-primary">Filtrar</button>
+								<button type="button" class="btn btn-default">Limpar</button>
+							</div>
+						</form>
 					</div>
 				</div>
-			</section>
+			</div>
 			<c:if test="${not empty mensagemErro}">
 				<div class="container">
 					<div class="alert alert-danger">${mensagemErro}</div>

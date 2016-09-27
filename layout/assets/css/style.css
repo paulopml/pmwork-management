@@ -65,6 +65,7 @@ body{
 p{
 	font-size: 18px;
 	font-weight: 300;
+	color: #003399;
 }
 .intro-page{
 	margin: 0 0 35px 0;
@@ -77,14 +78,36 @@ p{
 
 /* ======= BREADCRUMB ======= */
 header{
-	background: #f5f5f5;
+
 }
+h4,h5{
+	color: #003399;
+}
+h1, h1.heading{
+	color: #003399;
+}
+
+img.logo-home{
+	  margin-bottom: 9px;
+}
+ul.nav.nav-justified{
+	border: 0.5px solid #ccc;
+	border-radius: 5px;
+	height: 45px;
+	font-size: 17px
+}
+
+a{
+	color: #003399;
+}
+
 .breadcrumb{
 	padding: 8px 15px 8px 0px;
 	margin-bottom: 0;
 	list-style: none;
 	background-color: rgba(0, 0, 0, 0);
 	border-radius: 0;
+	border: 0.5px solid #ccc;
 }
 
 
@@ -101,7 +124,11 @@ form legend i{
 	font-size: 17px;
 	margin-right: 10px;
 }
-
+div.jumbotron{
+	height: 480px;
+	color: #003399;
+	background-color: white;
+}
 .group{
 	margin-bottom: 20px;
 }
