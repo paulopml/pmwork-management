@@ -261,3 +261,17 @@ table td {
 .permission-column{
 	padding-right: 0px;
 }
+
+/* ======= Indicadores ======= */
+
+fieldset.row{
+   margin-left: 10px;
+}
+
+div.text-right{
+	margin-right: 10px;
+}
+/* ======= controle de acesso ======= */
+div.modal-content{
+    width: 897px;	
+}

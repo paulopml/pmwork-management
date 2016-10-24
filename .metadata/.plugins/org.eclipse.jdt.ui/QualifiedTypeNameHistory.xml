@@ -19,4 +19,7 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="br.com.pmwork.model.entity.Indicadores"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.repositories.AcessoRepositories"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Acesso"/>
+<fullyQualifiedTypeName name="br.com.pmwork.exception.AcessoInvalidoException"/>
 </qualifiedTypeNameHistroy>

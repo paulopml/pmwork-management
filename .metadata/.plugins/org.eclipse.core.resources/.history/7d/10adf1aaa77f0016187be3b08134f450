@@ -1,6 +1,0 @@
-package br.com.pmwork.exception;
-
-
-public class IndicadorInvalidoException extends RuntimeException{
-
-}
