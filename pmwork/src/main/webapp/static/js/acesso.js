@@ -20,7 +20,7 @@ var limparModal = function(){
 	$('#visualizarProjetos').val('');
 	$('#manterColaborador').val('');
 	$('#classificarRisco').val('');
-
+	$('#manterEquipe').val('');
 	
 }
 
@@ -64,6 +64,8 @@ var aplicarListeners = function(){
 				$('#visualizarProjetos').val('acessos.visualizarProjetos');
 				$('#manterColaborador').val('acessos.manterColaborador');
 				$('#classificarRisco').val('acessos.classificarRisco');
+				$('#manterEquipe').val('acessos.manterEquipe');
+				
 				
 				$('#modal-cad-controle').modal('show');
 			});

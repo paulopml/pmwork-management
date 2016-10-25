@@ -30,7 +30,8 @@
 							<label class="checkbox-inline"><input type="checkbox" name="visualizarProjetos">Visualizar Projetos</label>
 						</div>
 						<div class="col-lg-2 group permission-column">
-							<label class="checkbox-inline check-10"><input type="checkbox" name="cadastrarIndicador">Cadastrar Indicadores</label>
+							<label class="checkbox-inline check-10"><input type="checkbox" name="manterEquipe">Manter equipe</label>
+							<label class="checkbox-inline"><input type="checkbox" name="cadastrarIndicador">Cadastrar Indicadores</label>
 							<label class="checkbox-inline"><input type="checkbox" name="associarIndicador">Associar Indicadores</label>
 							<label class="checkbox-inline"><input type="checkbox" name="manterColaborador">Manter colaboradores</label>
 						</div>

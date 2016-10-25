@@ -31,4 +31,3 @@
 			</div>
 		</div>
 	</div>
-	<jsp:include page="modal-del-controle.jsp"/>
