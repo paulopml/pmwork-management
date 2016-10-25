@@ -1,6 +1,0 @@
-$(document).ready(function(){
-	
-	$('#btn-salvar').on('click', function(){
-		var $('#form-indicador').serialize();
-	});
-});

@@ -1,0 +1,45 @@
+package br.com.pmwork.controllers;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import br.com.pmwork.exception.IndicadorInvalidoException;
+import br.com.pmwork.model.entity.Acesso;
+import br.com.pmwork.model.entity.Indicadores;
+import br.com.pmwork.model.repositories.AcessoRepositories;
+
+@Controller
+@RequestMapping("/controleacesso")
+public class AcessoController {
+
+	@Autowired private AcessoRepositories acessoRepositories;
+	
+	@RequestMapping(method = RequestMethod.GET)
+	public String listarIndicadores(Model model) {
+		Iterable<Acesso> acessos = acessoRepositories.findAll();
+		
+		model.addAttribute("titulo", "Acessos");
+		model.addAttribute("acessos", acessos);
+		return "controleacesso/lista-controle-acesso";
+	}
+	@RequestMapping(method = RequestMethod.POST)
+	public String salvarIndicador(@Valid @ModelAttribute Acesso acesso, BindingResult bindingResult, Model model){
+		
+		if(bindingResult.hasErrors()){
+			throw new IndicadorInvalidoException();
+		}
+		else{
+			acessoRepositories.save(acesso);
+		}
+		model.addAttribute("acessos", acessoRepositories.findAll());
+		return "indicador/tabela-controle";
+	}
+	
+}
