@@ -27,10 +27,14 @@ public class Colaborador {
 	@NotNull
 	@NotEmpty
 	private Date dataAdmissao;
+	
 	private boolean sexo;
 	
 	@ManyToMany
 	private Set<Acesso> cargo;
+	
+	private String email;
+	
 	public Long getId() {
 		return id;
 	}
@@ -68,6 +72,13 @@ public class Colaborador {
 	public void setCargo(Set<Acesso> cargo) {
 		this.cargo = cargo;
 	}
+		
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -75,6 +86,7 @@ public class Colaborador {
 		result = prime * result + ((cargo == null) ? 0 : cargo.hashCode());
 		result = prime * result + ((dataAdmissao == null) ? 0 : dataAdmissao.hashCode());
 		result = prime * result + ((dataNascimento == null) ? 0 : dataNascimento.hashCode());
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		result = prime * result + (sexo ? 1231 : 1237);
 		return result;
@@ -102,6 +114,11 @@ public class Colaborador {
 			if (other.dataNascimento != null)
 				return false;
 		} else if (!dataNascimento.equals(other.dataNascimento))
+			return false;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
 			return false;
 		if (nome == null) {
 			if (other.nome != null)

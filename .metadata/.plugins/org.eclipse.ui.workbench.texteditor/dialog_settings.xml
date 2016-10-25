@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="indi"/>
 			<item value="section-indicador"/>
 			<item value="indicador"/>
 			<item value="controle"/>
