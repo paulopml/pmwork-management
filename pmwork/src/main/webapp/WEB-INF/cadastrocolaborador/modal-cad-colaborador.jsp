@@ -5,7 +5,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <div class="modal fade" id="modal-cad-colaborador" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-sm">
+	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
 			<form id="form-colaborador" method="post">
 				<div class="modal-header">
@@ -32,23 +32,23 @@
 						<input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa">
 					</div>
 
-					<div class="col-lg-3 group">
-						<label for="">Sexo</label>
-						<span class="radio-inline"><input type="radio">Masculino</span>
-						<span class="radio-inline"><input type="radio">Feminino</span>
-					</div>
-
 					<div class="col-lg-4 group">
 						<label for="">Cargo</label>
-						<select class="form-control selectpicker">
-							<option>Cargo 1</option>
-							<option>Cargo 2</option>
+						<select id="cargo" name="cargo" class="form-control">
+							<c:forEach items="${acessos}" var="acesso">
+								<option value="${acesso.id}">${acesso.cargo}</option>
+							</c:forEach>											
 						</select>
 					</div>	
 									
 					<div class="col-lg-4 group">
 						<label for="">email</label>
-						<input type="text" class="form-control" id="email" name="email" >
+						<input type="text" class="form-control" id="email" name="email">
+					</div>
+					
+					<div class="col-lg-4 group">
+						<label for="">Especialidade</label>
+						<input type="text" class="form-control" id="especialidade" name="especialidade">	
 					</div>
 					
 					<input id="id" name="id" type="hidden">	

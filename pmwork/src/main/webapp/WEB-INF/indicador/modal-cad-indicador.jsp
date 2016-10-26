@@ -4,8 +4,8 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<div class="modal fade" id="modal-cad-indicador" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-sm">
+<div class="modal fade" id="modal-cad-indicador" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
 		<div class="modal-content">
 			<form id="form-indicador" method="post">
 				<div class="modal-header">

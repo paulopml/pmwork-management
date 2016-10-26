@@ -15,6 +15,8 @@
 							<th>#</th>
 							<th>Nome do indicador</th>
 							<th>Tipo de indicador</th>
+							<th></th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>

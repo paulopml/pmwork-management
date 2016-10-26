@@ -16,9 +16,11 @@
 							<th>Nome</th>
 							<th>Nascimento</th>
 							<th>Admissão</th>
-							<th>Sexo</th>
-							<th>cargo</th>
-							<th>email</th>
+							<th>Especialidade</th>
+							<th>Cargo</th>
+							<th>Email</th>
+							<th></th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -28,7 +30,7 @@
 								<td>${colaboradores.nome}</td>
 								<td>${colaboradores.dataNascimento}</td>
 								<td>${colaboradores.dataAdmissao}</td>
-								<td>${colaboradores.sexo}</td>
+								<td>${colaboradores.especialidade}</td>
 								<td>${colaboradores.cargo}</td>
 								<td>${colaboradores.email}</td>
 								<td><button type="button" class="btn-editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td>

@@ -56,7 +56,7 @@
 					<div class="col-lg-12">
 						<section class="intro-page">
 							<h1 class="heading">Cadastro de colaborador</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<p></p>
 						</section>
 						<form id="filter" class="filter">
 							<fieldset class="row">
@@ -81,25 +81,30 @@
 									<input type="text" class="form-control" id="" placeholder="dd/mm/aaaa">
 								</div>
 			
-								<div class="col-lg-3 group">
-									<label for="">Sexo</label>
-									<span class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Masculino</span>
-			
-									<span class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Feminino</span>
-								</div>
-			
 								<div class="col-lg-4 group">
 									<label for="">Cargo</label>
-									<select class="form-control selectpicker">
+									<select class="form-control">
 										<option>Cargo 1</option>
 										<option>Cargo 2</option>
 									</select>
 								</div>
+								
+								<div class="col-lg-3 group">
+									<label for="">email</label>
+									<input type="text" class="form-control" id="">
+								</div>
+								
+								<div class="col-lg-4 group">
+									<label for="">Especialidade</label>
+									<input type="text" class="form-control" id="">	
+								</div>
+								
 							</fieldset>
 			
 							<div class="text-right">
-								<button type="button" class="btn btn-default">Cancelar</button>
-								<button type="submit" class="btn btn-primary">Confirmar</button>
+								<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-cad-colaborador">Cadastrar</button>						
+								<button type="submit" class="btn btn-primary">Filtrar</button>
+								<button type="button" class="btn btn-default">Limpar</button>
 							</div>
 						</form>
 					</div>

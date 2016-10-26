@@ -28,7 +28,7 @@ public class Colaborador {
 	@NotEmpty
 	private Date dataAdmissao;
 	
-	private boolean sexo;
+	private String especialidade;
 	
 	@ManyToMany
 	private Set<Acesso> cargo;
@@ -59,12 +59,6 @@ public class Colaborador {
 	public void setDataAdmissao(Date dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}
-	public boolean isSexo() {
-		return sexo;
-	}
-	public void setSexo(boolean sexo) {
-		this.sexo = sexo;
-	}
 
 	public Set<Acesso> getCargo() {
 		return cargo;
@@ -79,6 +73,13 @@ public class Colaborador {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public String getEspecialidade() {
+		return especialidade;
+	}
+	public void setEspecialidade(String especialidade) {
+		this.especialidade = especialidade;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -87,8 +88,9 @@ public class Colaborador {
 		result = prime * result + ((dataAdmissao == null) ? 0 : dataAdmissao.hashCode());
 		result = prime * result + ((dataNascimento == null) ? 0 : dataNascimento.hashCode());
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + ((especialidade == null) ? 0 : especialidade.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
-		result = prime * result + (sexo ? 1231 : 1237);
 		return result;
 	}
 	@Override
@@ -120,12 +122,20 @@ public class Colaborador {
 				return false;
 		} else if (!email.equals(other.email))
 			return false;
+		if (especialidade == null) {
+			if (other.especialidade != null)
+				return false;
+		} else if (!especialidade.equals(other.especialidade))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
 		if (nome == null) {
 			if (other.nome != null)
 				return false;
 		} else if (!nome.equals(other.nome))
-			return false;
-		if (sexo != other.sexo)
 			return false;
 		return true;
 	}

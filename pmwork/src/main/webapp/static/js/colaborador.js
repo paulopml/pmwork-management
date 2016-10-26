@@ -9,7 +9,7 @@ var limparModal = function(){
 	$('#nome').val('');
 	$('#dataNascimento').val('');
 	$('#dataAdmissao').val('');
-	$('#sexo').val('');
+	$('#especialidade').val('');
 	$('#cargo').val('');
 	$('#email').val('');
 }
@@ -44,7 +44,7 @@ var aplicarListeners = function(){
 				$('#nome').val('colaboradores.nome');
 				$('#dataNascimento').val('colaboradores.dataNascimento');
 				$('#dataAdmissao').val('colaboradores.dataAdmissao');
-				$('#sexo').val('colaboradores.sexo');
+				$('#especialidade').val('colaboradores.especialidade');
 				$('#cargo').val('colaboradores.cargo');
 				$('#email').val('colaboradores.email');
 				
