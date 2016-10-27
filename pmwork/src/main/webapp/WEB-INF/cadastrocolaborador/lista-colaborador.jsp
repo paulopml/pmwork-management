@@ -120,7 +120,7 @@
 					<div class="alert alert-info">${mensagemInfo}</div>
 				</div>
 			</c:if>
-			<section id="section-indicador">
+			<section id="section-colaborador">
 				<jsp:include page="tabela-colaborador.jsp"/>
 			</section>
 		</main>

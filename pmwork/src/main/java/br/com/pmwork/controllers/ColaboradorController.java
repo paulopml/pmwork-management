@@ -26,7 +26,7 @@ import br.com.pmwork.propertyeditors.AcessoPropertyEditor;
 @RequestMapping("/cadastrocolaborador")
 public class ColaboradorController {
 
-	@Autowired(required=true) private AcessoPropertyEditor acessoPropertyEditor;
+	@Autowired private AcessoPropertyEditor acessoPropertyEditor;
 	@Autowired private ColaboradorRepositories colaboradorRepositories;
 	@Autowired private AcessoRepositories acessoRepositories; 
 	

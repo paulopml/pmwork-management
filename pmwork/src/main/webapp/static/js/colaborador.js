@@ -12,13 +12,15 @@ var limparModal = function(){
 	$('#especialidade').val('');
 	$('#cargo').val('');
 	$('#email').val('');
+	$('#login').val('');
+	$('#senha').val('');
 }
 
 var aplicarListeners = function(){
 	$('#modal-cad-colaborador').on('hide.bs.modal', limparModal);
 	
 	$('#btn-salvar').on('click', function(){
-		var url = 'colaborador';
+		var url = 'cadastrocolaborador';
 		var dadosColaborador = $('#form-colaborador').serialize();
 		
 		$.post(url, dadosColaborador)
@@ -41,12 +43,14 @@ var aplicarListeners = function(){
 			.success(function(colaboradores){
 				
 				$('#id').val(colaboradores.id);
-				$('#nome').val('colaboradores.nome');
-				$('#dataNascimento').val('colaboradores.dataNascimento');
-				$('#dataAdmissao').val('colaboradores.dataAdmissao');
-				$('#especialidade').val('colaboradores.especialidade');
-				$('#cargo').val('colaboradores.cargo');
-				$('#email').val('colaboradores.email');
+				$('#nome').val(colaboradores.nome);
+				$('#dataNascimento').val(colaboradores.dataNascimento);
+				$('#dataAdmissao').val(colaboradores.dataAdmissao);
+				$('#especialidade').val(colaboradores.especialidade);
+				$('#cargo').val(colaboradores.cargo);
+				$('#email').val(colaboradores.email);
+				$('#login').val(colaboradores.login);
+				$('#senha').val(colaboradores.senha);
 				
 				$('#modal-cad-colaborador').modal('show');
 			});

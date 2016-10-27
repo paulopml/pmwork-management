@@ -23,17 +23,17 @@
 					</div>
 
 					<div class="col-lg-2 group">
-						<label for="">Data de Nascimento</label>
+						<label for="dataNascimento">Data de Nascimento</label>
 						<input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa">
 					</div>
 
 					<div class="col-lg-2 group">
-						<label for="">Data de Admissão</label>
+						<label for="dataAdmissao">Data de Admissão</label>
 						<input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa">
 					</div>
 
 					<div class="col-lg-4 group">
-						<label for="">Cargo</label>
+						<label for="cargo">Cargo</label>
 						<select id="cargo" name="cargo" class="form-control">
 							<c:forEach items="${acessos}" var="acesso">
 								<option value="${acesso.id}">${acesso.cargo}</option>
@@ -42,15 +42,24 @@
 					</div>	
 									
 					<div class="col-lg-4 group">
-						<label for="">email</label>
+						<label for="email">Email</label>
 						<input type="text" class="form-control" id="email" name="email">
 					</div>
 					
 					<div class="col-lg-4 group">
-						<label for="">Especialidade</label>
+						<label for="especialidade">Especialidade</label>
 						<input type="text" class="form-control" id="especialidade" name="especialidade">	
 					</div>
 					
+					<div class="col-lg-2 group">
+                        <label for="login">Login</label>
+                        <input type="text" class="form-control" id="login" name="login">    
+                    </div>
+                    
+                    <div class="col-lg-2 group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha">    
+                    </div>
 					<input id="id" name="id" type="hidden">	
 				</div>
 				<div class="modal-footer">
