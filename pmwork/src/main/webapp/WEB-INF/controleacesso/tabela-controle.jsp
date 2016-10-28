@@ -14,6 +14,8 @@
 						<tr>
 							<th>#</th>
 							<th>Tipo de acesso</th>
+							<th></th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>

@@ -27,10 +27,22 @@ public class Colaborador {
 	@NotNull
 	@NotEmpty
 	private Date dataAdmissao;
-	private boolean sexo;
+	
+	private String especialidade;
 	
 	@ManyToMany
 	private Set<Acesso> cargo;
+	
+    private String email;
+    
+    @NotNull
+    @NotEmpty
+    private String login;
+    
+    @NotNull
+    @NotEmpty
+    private String senha;
+	
 	public Long getId() {
 		return id;
 	}
@@ -55,18 +67,39 @@ public class Colaborador {
 	public void setDataAdmissao(Date dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}
-	public boolean isSexo() {
-		return sexo;
-	}
-	public void setSexo(boolean sexo) {
-		this.sexo = sexo;
-	}
 
 	public Set<Acesso> getCargo() {
 		return cargo;
 	}
 	public void setCargo(Set<Acesso> cargo) {
 		this.cargo = cargo;
+	}
+		
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getEspecialidade() {
+		return especialidade;
+	}
+	public void setEspecialidade(String especialidade) {
+		this.especialidade = especialidade;
+	}
+	
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 	@Override
 	public int hashCode() {
@@ -75,8 +108,12 @@ public class Colaborador {
 		result = prime * result + ((cargo == null) ? 0 : cargo.hashCode());
 		result = prime * result + ((dataAdmissao == null) ? 0 : dataAdmissao.hashCode());
 		result = prime * result + ((dataNascimento == null) ? 0 : dataNascimento.hashCode());
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + ((especialidade == null) ? 0 : especialidade.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((login == null) ? 0 : login.hashCode());
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
-		result = prime * result + (sexo ? 1231 : 1237);
+		result = prime * result + ((senha == null) ? 0 : senha.hashCode());
 		return result;
 	}
 	@Override
@@ -103,12 +140,35 @@ public class Colaborador {
 				return false;
 		} else if (!dataNascimento.equals(other.dataNascimento))
 			return false;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
+			return false;
+		if (especialidade == null) {
+			if (other.especialidade != null)
+				return false;
+		} else if (!especialidade.equals(other.especialidade))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (login == null) {
+			if (other.login != null)
+				return false;
+		} else if (!login.equals(other.login))
+			return false;
 		if (nome == null) {
 			if (other.nome != null)
 				return false;
 		} else if (!nome.equals(other.nome))
 			return false;
-		if (sexo != other.sexo)
+		if (senha == null) {
+			if (other.senha != null)
+				return false;
+		} else if (!senha.equals(other.senha))
 			return false;
 		return true;
 	}

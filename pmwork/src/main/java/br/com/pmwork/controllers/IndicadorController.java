@@ -30,7 +30,7 @@ public class IndicadorController {
 	public String listarIndicadores(Model model) {
 		Iterable<Indicadores> indicadores = indicadoresRepositorio.findAll();
 		
-		model.addAttribute("titulo", "Listagem");
+		model.addAttribute("titulo", "Indicadores");
 		model.addAttribute("indicadores", indicadores);
 		return "indicador/listagem";
 	}

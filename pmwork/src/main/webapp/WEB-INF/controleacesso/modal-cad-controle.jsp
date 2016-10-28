@@ -5,7 +5,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <div class="modal fade" id="modal-cad-controle" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-sm">
+	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
 			<form id="form-controle" method="post">
 				<div class="modal-header">
