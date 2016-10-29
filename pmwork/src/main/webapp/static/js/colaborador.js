@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	aplicarListeners();
-	
+	aplicatListenerBtnSalvar();
 });
 
 var limparModal = function(){
@@ -16,13 +16,12 @@ var limparModal = function(){
 	$('#senha').val('');
 }
 
-var aplicarListeners = function(){
-	$('#modal-cad-colaborador').on('hide.bs.modal', limparModal);
+var aplicatListenerBtnSalvar = function(){
 	
 	$('#btn-salvar').on('click', function(){
 		var url = 'cadastrocolaborador';
 		var dadosColaborador = $('#form-colaborador').serialize();
-		
+		console.log(dadosColaborador);
 		$.post(url, dadosColaborador)
 			.done(function(pagina){
 				$('#section-colaborador').html(pagina);
@@ -35,6 +34,11 @@ var aplicarListeners = function(){
 				$('#modal-cad-colaborador').modal('hide');
 			});
 	});
+}
+
+var aplicarListeners = function(){
+	$('#modal-cad-colaborador').on('hide.bs.modal', limparModal);
+	
 	$('.btn-editar').on('click', function(){
 		var id = $(this).parents('tr').data('id');
 		var url = "cadastrocolaborador/"+id;

@@ -26,14 +26,7 @@
 					</h5>
 					<div class="masthead" id="bs-example-navbar-collapse-1">
 						<ul class="nav nav-justified">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="/pmwork/app/cadastrarprojeto">Cadastro CTRL + C</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="/pmwork/app/consultarprojeto">Consultar Projetos</a></li>
-								</ul>
-							</li>
+							<li><a href="/pmwork/app/projetos">Projetos</a></li>
 							<li><a href="/pmwork/app/indicador">Indicadores</a></li>
 							<li><a href="/pmwork/app/relatorio">Relatórios</a></li>
 							<li class="dropdown">
@@ -104,7 +97,7 @@
 			</section>
 		</main>
 		<jsp:include page="modal-cad-indicador.jsp"/>
-		<script type="text/javascript" src="${path}/static/js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="${path}/static/js/jquery-2.2.3.min.js"></script>
 		<script type="text/javascript" src="${path}/static/js/indicador.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/jquery.mask.js"></script>
