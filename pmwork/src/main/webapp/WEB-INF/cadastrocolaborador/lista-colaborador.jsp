@@ -5,6 +5,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!DOCTYPE html>
+<fmt:setLocale value="pt_BR"/>
 	<html lang="pt-br">
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

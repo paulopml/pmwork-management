@@ -16,6 +16,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import br.com.pmwork.exception.ProjetoInvalidoException;
 import br.com.pmwork.model.entity.Projeto;
+import br.com.pmwork.model.nums.ClassificacaoRisco;
+import br.com.pmwork.model.nums.Status;
+import br.com.pmwork.model.repositories.ColaboradorRepositories;
+import br.com.pmwork.model.repositories.IndicadoresRepositories;
 import br.com.pmwork.model.repositories.ProjetoRepositories;
 
 @Controller
@@ -23,15 +27,20 @@ import br.com.pmwork.model.repositories.ProjetoRepositories;
 public class ProjetoController {
 	
 	@Autowired private ProjetoRepositories projetoRepositories;
+	@Autowired private ColaboradorRepositories colaboradorRepositories; 
+	@Autowired private IndicadoresRepositories indicadoresRepositories; 
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public String listarProjetos(Model model){
 		Iterable<Projeto> projetos = projetoRepositories.findAll();
-		
+
 		
 		model.addAttribute("titulo", "Projetos");
 		model.addAttribute("projetos", projetos);
-		
+		model.addAttribute("status", Status.values());
+		model.addAttribute("classificacaoRisco", ClassificacaoRisco.values());
+		model.addAttribute("equipe", colaboradorRepositories.findAll());
+		model.addAttribute("indicadores", indicadoresRepositories.findAll());
 		return "projetos/lista-projetos";
 	}
 	

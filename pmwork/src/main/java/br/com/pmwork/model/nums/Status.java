@@ -7,11 +7,16 @@ public enum Status {
 	
 	private String statusProj;
 	
-	Status (String status){
+	Status (final String status){
 		this.statusProj = status; 
 	}
 
 	public String getStatusProj() {
 		return statusProj;
 	}
+	
+	@Override
+    public String toString() {
+        return this.getStatusProj();
+    }
 }

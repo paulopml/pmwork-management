@@ -24,13 +24,13 @@
 
 					<div class="col-lg-2 group">
 						<label for="dataNascimento">Data de Nascimento</label>
-						<input type="text" class="form-control" id="dataNascimento" name="dataNascimento"  value = "<fmt:formatDate value="${dataNascimento}" pattern="dd-MM-yyyy" />"/>
+						<input type="text" class="form-control fa-calendar" id="dataNascimento" name="dataNascimento"  value = "<fmt:formatDate value="${dataNascimento}" pattern="dd-MM-yyyy" />"/>
 			    	<!-- <input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa"> -->
 					</div>
 
 					<div class="col-lg-2 group">
 						<label for="dataAdmissao">Data de Admissão</label>
-						<input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao"  value = "<fmt:formatDate value="${dataAdmissao}" pattern="dd-MM-yyyy" />"/>
+						<input type="text" class="form-control fa-calendar" id="dataAdmissao" name="dataAdmissao"  value = "<fmt:formatDate value="${dataAdmissao}" pattern="dd-MM-yyyy" />"/>
 					<!-- <input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa">  -->
 					</div>
 
