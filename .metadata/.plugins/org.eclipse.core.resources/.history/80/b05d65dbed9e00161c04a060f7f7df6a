@@ -1,0 +1,284 @@
+/* LOGIN */
+.pagelogin{
+	background: #ECF0F5;
+}
+
+.wrapper {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.form-signin {
+	max-width: 380px;
+	padding: 15px 35px 45px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 30px;
+}
+.form-signin .checkbox {
+	margin-left: 20px;
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type="text"] {
+	margin-bottom: -1px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: 20px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+
+
+/* ======= SETTINGS ======= */
+body{
+	background: #fff;
+	font-family: 'Lato', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+.heading{
+	color: #039be5;
+	font-weight: 400;
+}
+p{
+	font-size: 18px;
+	font-weight: 300;
+	color: #003399;
+}
+.intro-page{
+	margin: 0 0 35px 0;
+}
+
+.navbar{
+	margin: 0;
+}
+
+
+/* ======= BREADCRUMB ======= */
+header{
+
+}
+h4,h5{
+	color: #003399;
+}
+h1, h1.heading{
+	color: #003399;
+}
+
+img.logo-home{
+	  margin-bottom: 9px;
+}
+ul.nav.nav-justified{
+	border: 0.5px solid #ccc;
+	border-radius: 5px;
+	height: 45px;
+	font-size: 17px
+}
+
+a{
+	color: #003399;
+}
+
+.breadcrumb{
+	padding: 8px 15px 8px 0px;
+	margin-bottom: 0;
+	list-style: none;
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 0;
+	border: 0.5px solid #ccc;
+}
+
+
+/* ======= FORMS ======= */
+.filter .form-control{
+	border: 0;
+    box-shadow: none;
+}
+label{
+	display: block;
+	font-weight: 400;
+}
+form legend i{
+	font-size: 17px;
+	margin-right: 10px;
+}
+div.jumbotron{
+	height: 480px;
+	color: #003399;
+	background-color: white;
+}
+.group{
+	margin-bottom: 20px;
+}
+
+.text-right .btn{
+	margin-left: 20px;
+}
+.filter{
+	background: #ECF0F5;
+    margin-bottom: 30px;
+	padding: 30px 0;
+}
+
+.bootstrap-select > .dropdown-toggle{
+	border: 0;
+}
+
+
+
+
+
+
+/* ======= TABLE ======= */
+table {
+	position: relative;
+	border: 1px solid rgba(0,0,0,.12);
+	border-collapse: collapse;
+	white-space: nowrap;
+	font-size: 13px;
+	background-color: #fff;
+}
+
+table td, table th{
+	padding: 12px 30px;
+}
+table thead {
+	padding-bottom: 3px;
+}
+table tbody tr {
+	position: relative;
+	height: 48px;
+	-webkit-transition-duration: .28s;
+	transition-duration: .28s;
+	-webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	-webkit-transition-property: background-color;
+	transition-property: background-color;
+}
+table td {
+	position: relative;
+	vertical-align: top;
+	height: 48px;
+	border-top: 1px solid rgba(0,0,0,.12);
+	border-bottom: 1px solid rgba(0,0,0,.12);
+	box-sizing: border-box;
+}
+
+
+
+
+/* ======= FAQ ======= */
+.faq-title {
+  color:#333;
+  font-weight:400;
+  font-size:42px;
+  margin-bottom:30px;
+}
+.faq-title i {
+  font-size:32px;
+  margin-right:10px;
+}
+.faq-filter.affix {
+  width:360px;
+  top:33px;
+}
+.faq-filter {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+.faq-filter li {
+  margin-bottom:10px;
+  display:block;
+  position:relative;
+  padding-right:15px;
+}
+.faq-filter li a {
+  color:#219be2 !important;
+}
+.faq-filter li a i {
+  position:absolute;
+  right:-12px;
+  top:20%;
+  color:#219be2 !important;
+}
+.faq-filter li a em {
+  position:absolute;
+  right:-12px;
+  top:20%;
+  color:#219be2 !important;
+}
+.faq-container {
+  border-bottom:1px solid #ccc;
+  padding-bottom:20px;
+  margin-bottom:30px;
+}
+.faq-container h3 {
+  font-weight:400;
+  padding:0;
+  margin:0 0 20px 0;
+  color:#219be2;
+  font-size:24px;
+}
+.faq-container p {
+  color:#777;
+  font-size:16px;
+}
+.logo-home{
+	width: 100px;
+}
+.logo-login{
+	margin-left: 450px;
+}
+.img-home{
+	margin-right: 15px; width: 300px; float: left;
+}
+.check-10{
+	margin-left: 10px;
+}
+.permission-column{
+	padding-right: 0px;
+}
+
+/* ======= Indicadores ======= */
+
+fieldset.row{
+   margin-left: 10px;
+}
+
+div.text-right{
+	margin-right: 10px;
+}
+/* ======= controle de acesso ======= */
+div.modal-content{
+    width: 897px;	
+}
+/* ======= modal cadastro projetos ======= */
+div.modal-body{
+	height: 800px;
+}
+.md-foot-pj{
+	
+}

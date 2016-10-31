@@ -41,22 +41,6 @@ var aplicatListenerBtnSalvar = function(){
 var aplicarListeners = function(){
 	$('#modal-cad-projeto').on('hide.bs.modal', limparModal);
 	
-	$('#btn-salvar').on('click', function(){
-		var url = 'projetos';
-		var dadosProjeto = $('#form-projeto').serialize();
-		
-		$.post(url, dadosProjeto)
-			.done(function(pagina){
-				$('#section-projeto').html(pagina);
-				aplicarListeners();
-			})
-			.fail(function(){
-				alert('Erro ao salvar');
-			})
-			.always(function(){
-				$('#modal-cad-projeto').modal('hide');
-			});
-	});
 	$('.btn-editar').on('click', function(){
 		var id = $(this).parents('tr').data('id');
 		var url = "projetos/"+id;

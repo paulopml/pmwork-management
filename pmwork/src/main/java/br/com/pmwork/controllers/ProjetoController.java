@@ -39,7 +39,7 @@ public class ProjetoController {
 		model.addAttribute("projetos", projetos);
 		model.addAttribute("status", Status.values());
 		model.addAttribute("classificacaoRisco", ClassificacaoRisco.values());
-		model.addAttribute("equipe", colaboradorRepositories.findAll());
+		model.addAttribute("equipes", colaboradorRepositories.findAll());
 		model.addAttribute("indicadores", indicadoresRepositories.findAll());
 		return "projetos/lista-projetos";
 	}

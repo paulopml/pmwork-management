@@ -5,7 +5,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!DOCTYPE html>
-	<div class="container">
 		<div class="row">
 			<div class="col-lg-8">
 				<table class="table">
@@ -32,4 +31,3 @@
 				</table>
 			</div>
 		</div>
-	</div>
