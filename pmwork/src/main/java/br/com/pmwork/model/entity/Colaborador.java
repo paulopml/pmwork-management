@@ -11,6 +11,7 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Colaborador {
@@ -21,11 +22,15 @@ public class Colaborador {
 	@NotNull
 	@NotEmpty
 	private String nome;
+	
 	@NotNull
 	@NotEmpty
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dataNascimento;
+	
 	@NotNull
 	@NotEmpty
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dataAdmissao;
 	
 	private String especialidade;

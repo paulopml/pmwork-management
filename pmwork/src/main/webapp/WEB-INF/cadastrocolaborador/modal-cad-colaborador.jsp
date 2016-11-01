@@ -16,50 +16,53 @@
 					<h4 class="modal-title">Cadastrar colaborador</h4>
 				</div>
 				<div class="modal-body">
-					
-					<div class="col-lg-5 group">
-						<label for="nome">Nome do Colaborador</label>
-						<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Colaborador">
-					</div>
-
-					<div class="col-lg-2 group">
-						<label for="dataNascimento">Data de Nascimento</label>
-						<input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa">
-					</div>
-
-					<div class="col-lg-2 group">
-						<label for="dataAdmissao">Data de Admissão</label>
-						<input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa">
-					</div>
-
-					<div class="col-lg-4 group">
-						<label for="cargo">Cargo</label>
-						<select id="cargo" name="cargo" class="form-control">
-							<c:forEach items="${acessos}" var="acesso">
-								<option value="${acesso.id}">${acesso.cargo}</option>
-							</c:forEach>											
-						</select>
-					</div>	
-									
-					<div class="col-lg-4 group">
-						<label for="email">Email</label>
-						<input type="text" class="form-control" id="email" name="email">
-					</div>
-					
-					<div class="col-lg-4 group">
-						<label for="especialidade">Especialidade</label>
-						<input type="text" class="form-control" id="especialidade" name="especialidade">	
-					</div>
-					
-					<div class="col-lg-2 group">
-                        <label for="login">Login</label>
-                        <input type="text" class="form-control" id="login" name="login">    
-                    </div>
-                    
-                    <div class="col-lg-2 group">
-                        <label for="senha">Senha</label>
-                        <input type="password" class="form-control" id="senha" name="senha">    
-                    </div>
+					<fieldset class="row">
+						<div class="col-lg-5 group">
+							<label for="nome">Nome do Colaborador</label>
+							<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Colaborador">
+						</div>
+	
+						<div class="col-lg-3 group">
+							<label for="dataNascimento">Data de Nascimento</label>
+							<input type="text" class="form-control fa-calendar" id="dataNascimento" name="dataNascimento"  value = "<fmt:formatDate value="${dataNascimento}" pattern="dd-MM-yyyy" />"/>
+				    	<!-- <input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa"> -->
+						</div>
+	
+						<div class="col-lg-3 group">
+							<label for="dataAdmissao">Data de Admissão</label>
+							<input type="text" class="form-control fa-calendar" id="dataAdmissao" name="dataAdmissao"  value = "<fmt:formatDate value="${dataAdmissao}" pattern="dd-MM-yyyy" />"/>
+						<!-- <input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa">  -->
+						</div>
+	
+						<div class="col-lg-4 group">
+							<label for="cargo">Cargo</label>
+							<select id="cargo" name="cargo" class="form-control">
+								<c:forEach items="${acessos}" var="acesso">
+									<option value="${acesso.id}">${acesso.cargo}</option>
+								</c:forEach>											
+							</select>
+						</div>	
+										
+						<div class="col-lg-4 group">
+							<label for="email">Email</label>
+							<input type="text" class="form-control" id="email" name="email">
+						</div>
+						
+						<div class="col-lg-4 group">
+							<label for="especialidade">Especialidade</label>
+							<input type="text" class="form-control" id="especialidade" name="especialidade">	
+						</div>
+						
+						<div class="col-lg-2 group">
+	                        <label for="login">Login</label>
+	                        <input type="text" class="form-control" id="login" name="login">    
+	                    </div>
+	                    
+	                    <div class="col-lg-2 group">
+	                        <label for="senha">Senha</label>
+	                        <input type="password" class="form-control" id="senha" name="senha">    
+	                    </div>
+	                </fieldset>    
 					<input id="id" name="id" type="hidden">	
 				</div>
 				<div class="modal-footer">

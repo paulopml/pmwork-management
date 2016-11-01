@@ -13,6 +13,7 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import br.com.pmwork.model.nums.ClassificacaoRisco;
 import br.com.pmwork.model.nums.Status;
@@ -23,19 +24,28 @@ public class Projeto {
 	@Id	
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	
 	@NotNull
 	@NotEmpty
 	private String nome;
+	
 	@NotNull
 	@NotEmpty
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dataInicio;
+	
 	@NotNull
 	@NotEmpty
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dataTermino;
+	
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dataRealTermino;
+	
 	@NotNull
 	@NotEmpty
 	private String descricaoEscopo;
+	
 	@NotNull
 	@NotEmpty
 	private Double orcamentoTotal;
@@ -58,6 +68,8 @@ public class Projeto {
 	private Set<Atividade> atividade;
 	
 	private String justificativa;
+	
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dataUltAlteracao;
 	
 	public Long getId() {

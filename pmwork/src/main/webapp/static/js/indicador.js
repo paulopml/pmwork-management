@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	aplicarListeners();
-	
+	aplicatListenerBtnSalvar();
 });
 
 var limparModal = function(){
@@ -10,8 +10,7 @@ var limparModal = function(){
 	$('#tipoIndicador').val('');
 }
 
-var aplicarListeners = function(){
-	$('#modal-cad-indicador').on('hide.bs.modal', limparModal);
+var aplicatListenerBtnSalvar = function(){
 	
 	$('#btn-salvar').on('click', function(){
 		var url = 'indicador';
@@ -29,6 +28,13 @@ var aplicarListeners = function(){
 				$('#modal-cad-indicador').modal('hide');
 			});
 	});
+	
+}
+
+
+var aplicarListeners = function(){
+	$('#modal-cad-indicador').on('hide.bs.modal', limparModal);
+	
 	$('.btn-editar').on('click', function(){
 		var id = $(this).parents('tr').data('id');
 		var url = "indicador/"+id;

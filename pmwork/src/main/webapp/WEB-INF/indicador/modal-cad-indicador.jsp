@@ -5,7 +5,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <div class="modal fade" id="modal-cad-indicador" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog">
+	<div class="modal-dialog ">
 		<div class="modal-content">
 			<form id="form-indicador" method="post">
 				<div class="modal-header">
@@ -16,12 +16,16 @@
 					<h4 class="modal-title">Cadastrar indicador</h4>
 				</div>
 				<div class="modal-body">
-					<label for="nomeIndicador">Nome:</label>
-					<input id="nomeIndicador" name="nomeIndicador" class="form-control">
-					
-					<label for=tipoIndicador>Tipo indicador:</label>
-					<input id="tipoIndicador" name="tipoIndicador" class="form-control">
-					
+					<fieldset class="row">				
+						<div class="col-sm-4 group">
+							<label for="nomeIndicador">Nome:</label>
+							<input id="nomeIndicador" name="nomeIndicador" class="form-control">
+						</div>	
+						<div class="col-sm-4 group">
+							<label for=tipoIndicador>Tipo indicador:</label>
+							<input id="tipoIndicador" name="tipoIndicador" class="form-control">
+						</div>	
+					</fieldset>
 					<input id="id" name="id" type="hidden">	
 				</div>
 				<div class="modal-footer">

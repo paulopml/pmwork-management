@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	aplicarListeners();
-	
+	aplicatListenerBtnSalvar();
 });
 
 var limparModal = function(){
@@ -22,6 +22,25 @@ var limparModal = function(){
 	$('#classificarRisco').val('');
 	$('#manterEquipe').val('');
 	
+}
+
+var aplicatListenerBtnSalvar = function(){
+	$('#btn-salvar').on('click', function(){
+		var url = 'controleacesso';
+		var dadosAcesso = $('#form-controle').serialize();
+		
+		$.post(url, dadosAcesso)
+			.done(function(pagina){
+				$('#section-controle').html(pagina);
+				aplicarListeners();
+			})
+			.fail(function(){
+				alert('Erro ao salvar');
+			})
+			.always(function(){
+				$('#modal-cad-controle').modal('hide');
+			});
+	});	
 }
 
 var aplicarListeners = function(){
