@@ -18,11 +18,6 @@ var limparModal = function(){
 	$('#indicadores').val('');
 	$('#justificativa').val('');
 }
-function incluirEquipe(){
-	var resultEquipe = $("#porte option:selected").text();
-	$("#menbroeqp").html(resultEquipe);
-}
-
 
 var aplicatListenerBtnSalvar = function(){
 	$('#btn-salvar').on('click', function(){

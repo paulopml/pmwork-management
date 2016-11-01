@@ -83,7 +83,7 @@
 									</select>
 								</div>
 								<div class="col-lg-2 group">
-									<button type="button" id="btn-incluir" class="btn btn-default" onclick="incluirEquipe();">Incluir</button>
+									<button type="button" id="btn-incluir" class="btn btn-default" onclick="incluirEquipe();" data-dismiss="modal">Incluir</button>
 	                    		</div>
 		                    	<div id= "equipe-projeto" class="col-lg-10 group">
 		                    		<jsp:include page="tabela-equipe.jsp"/>

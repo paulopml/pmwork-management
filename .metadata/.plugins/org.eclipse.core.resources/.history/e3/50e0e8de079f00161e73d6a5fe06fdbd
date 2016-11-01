@@ -20,7 +20,7 @@ var limparModal = function(){
 }
 function incluirEquipe(){
 	var resultEquipe = $("#porte option:selected").text();
-	$("#menbroeqp").html(resultEquipe);
+	$("#menbro").html(resultEquipe);
 }
 
 
