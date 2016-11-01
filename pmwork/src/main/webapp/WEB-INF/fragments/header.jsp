@@ -37,7 +37,12 @@
 								</ul>
 							</li>
 							<li><a href="help.html">Help</a></li>
-							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+							<li>
+								<form action="${path}/sair" method="post">
+									<button type="submit" id="bt-sair"><span class="glyphicon glyphicon-log-in"></span> Logout</button>
+									<input type="hidden" name="_csrf" value="${_csrf.token}">
+								</form>
+							</li>
 						</ul>
 					</div>
 				</div>

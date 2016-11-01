@@ -109,7 +109,11 @@ a{
 	border-radius: 0;
 	border: 0.5px solid #ccc;
 }
-
+#bt-sair{
+	color: #003399;
+	border-style: none;
+    background-color: white;
+}
 
 /* ======= FORMS ======= */
 .filter .form-control{
