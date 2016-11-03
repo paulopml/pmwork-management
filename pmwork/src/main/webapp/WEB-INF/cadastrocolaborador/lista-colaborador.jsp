@@ -30,12 +30,12 @@
 			
 								<div class="col-lg-2 group">
 									<label for="">Data de Nascimento</label>
-									<input type="text" class="form-control" id="" placeholder="dd/mm/aaaa">
+									<input type="date" class="form-control" id="" placeholder="dd/mm/aaaa">
 								</div>
 			
 								<div class="col-lg-2 group">
 									<label for="">Data de Admissão</label>
-									<input type="text" class="form-control" id="" placeholder="dd/mm/aaaa">
+									<input type="date" class="form-control" id="" placeholder="dd/mm/aaaa">
 								</div>
 			
 								<div class="col-lg-4 group">

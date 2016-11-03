@@ -22,20 +22,20 @@
 							<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do projeto">
 						</div>
 						
-						<div class="col-lg-2 group">
+						<div class="col-lg-3 group">
 							<label for="dataInicio">Data de início</label>
-							<input type="text" class="form-control fa-calendar" id="dataInicio" name="dataInicio"  value = "<fmt:formatDate value="${dataInicio}" pattern="dd-MM-yyyy" />"/>
+							<input type="date" class="form-control fa-calendar" id="dataInicio" name="dataInicio"  value = "<fmt:formatDate value="${dataInicio}" pattern="dd-MM-yyyy" />"/>
 				    	<!-- <input type="text" class="form-control" id="dataInicio" name="dataInicio" placeholder="dd/mm/aaaa"> -->
 						</div>
 	
-						<div class="col-lg-2 group">
+						<div class="col-lg-3 group">
 							<label for="dataTermino">Data de término</label>
-							<input type="text" class="form-control fa-calendar" id="dataTermino" name="dataTermino"  value = "<fmt:formatDate value="${dataTermino}" pattern="dd-MM-yyyy" />"/>
+							<input type="date" class="form-control fa-calendar" id="dataTermino" name="dataTermino"  value = "<fmt:formatDate value="${dataTermino}" pattern="dd-MM-yyyy" />"/>
 						<!-- <input type="text" class="form-control" id="dataTermino" name="dataTermino" placeholder="dd/mm/aaaa">  -->
 						</div>
 						<div class="col-lg-3 group">
 							<label for="dataRealTermino">Data real de término</label>
-							<input type="text" class="form-control fa-calendar" id="dataRealTermino" name="dataRealTermino"  value = "<fmt:formatDate value="${dataRealTermino}" pattern="dd-MM-yyyy" />"/>
+							<input type="date" class="form-control fa-calendar" id="dataRealTermino" name="dataRealTermino"  value = "<fmt:formatDate value="${dataRealTermino}" pattern="dd-MM-yyyy" />"/>
 						<!-- <input type="text" class="form-control" id="dataRealTermino" name="dataRealTermino" placeholder="dd/mm/aaaa">  -->
 						</div>
 						<div class="col-lg-4 group">
@@ -61,7 +61,7 @@
 						
 						<div class="col-lg-3 group">
 	                        <label for="orcamentoTotal">Orçamento total</label> 
-	                        <input type="text" class="form-control" value="<fmt:formatNumber value="${projeto.orcamentoTotal}" type="currency"/>">
+	                        <input type="text" class="form-control dinheiro" value="<fmt:formatNumber value="${projeto.orcamentoTotal}" type="currency"/>">
 	                    <!--    <input type="text" class="form-control" id="orcamentoTotal" name="orcamentoTotal">  -->   
 	                    </div>                   
 	                    <div class="col-lg-4 group">
@@ -78,12 +78,12 @@
 	                    		<div class="col-lg-10 group">                           
 								   <select id="equipes" name="equipes" class="form-control">
 										<c:forEach items="${equipes}" var="equipepj">
-											<option value="${equipepj.id}">${equipepj.nome}</option>
+											<option class="selecionado" value="${equipepj.id}">${equipepj.nome}</option>
 										</c:forEach>											
 									</select>
 								</div>
 								<div class="col-lg-2 group">
-									<button type="button" id="btn-incluir" class="btn btn-default" onclick="incluirEquipe();">Incluir</button>
+									<button type="button" id="btn-incluir" class="btn btn-default" ">Incluir</button>
 	                    		</div>
 		                    	<div id= "equipe-projeto" class="col-lg-10 group">
 		                    		<jsp:include page="tabela-equipe.jsp"/>
