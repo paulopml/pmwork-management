@@ -29,28 +29,29 @@
 								
 								<div class="col-lg-3 group">
 									<label for="">Status</label>
-									<select class="form-control">
-										<option>Em análise</option>
-										<option>Análise realizada</option>
+									<select id="status" name="status" class="form-control">
+										<c:forEach items="${status}" var="statuspj">
+											<option value="${statuspj}">${statuspj}</option>
+										</c:forEach>											
 									</select>
 								</div>
 								<div class="col-lg-3 group">
 									<label for="">Risco</label>
-									<select class="form-control">
-										<option>Baixo</option>
-										<option>Médio</option>
-										<option>Alto</option>
+									<select id="classificacaoRisco" name="classificacaoRisco" class="form-control">
+										<c:forEach items="${classificacaoRisco}" var="risco">
+											<option value="${risco}">${risco}</option>
+										</c:forEach>											
 									</select>
 								</div>	
 												
 								<div class="col-lg-2 group">
 									<label for="">Data início</label>
-									<input type="text" class="form-control" id="" placeholder="dd/mm/aaaa">
+									<input type="date" class="form-control" id="" placeholder="dd/mm/aaaa">
 								</div>
 			
 								<div class="col-lg-2 group">
 									<label for="">Data fim</label>
-									<input type="text" class="form-control" id="" placeholder="dd/mm/aaaa">
+									<input type="date" class="form-control" id="" placeholder="dd/mm/aaaa">
 								</div>			
 							</fieldset>
 			
@@ -79,6 +80,7 @@
 	</main>
 		<jsp:include page="modal-cad-projeto.jsp"/>
 		<script type="text/javascript" src="${path}/static/js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="${path}/static/js/jquery.maskMoney.js"></script>
 		<script type="text/javascript" src="${path}/static/js/projeto.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/jquery.mask.js"></script>

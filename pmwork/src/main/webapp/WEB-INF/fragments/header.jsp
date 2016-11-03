@@ -20,7 +20,7 @@
 			<header>
 				<div class="container">
 					<h5>
-						<a href="home.html"><img src="${path}/static/bootstrap/img/logo_on_transparent_254x75.png"  class="logo-home"/></a>
+						<a href="/pmwork/home.jsp"><img src="${path}/static/bootstrap/img/logo_on_transparent_254x75.png"  class="logo-home"/></a>
 							Gerenciamento de Projetos
 					</h5>
 					<div class="masthead" id="bs-example-navbar-collapse-1">
@@ -36,7 +36,7 @@
 									<li><a href="/pmwork/app/controleacesso">Controle de acesso</a></li>
 								</ul>
 							</li>
-							<li><a href="help.html">Help</a></li>
+							<li><a href="/pmwork/help.jsp">Help</a></li>
 							<li>
 								<form action="${path}/sair" method="post">
 									<button type="submit" id="bt-sair"><span class="glyphicon glyphicon-log-in"></span> Logout</button>

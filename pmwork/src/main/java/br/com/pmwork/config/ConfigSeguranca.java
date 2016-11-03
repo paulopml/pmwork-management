@@ -25,7 +25,7 @@ public class ConfigSeguranca extends WebSecurityConfigurerAdapter{
 				.and()
 					.formLogin().loginPage("/login.jsp")
 					.loginProcessingUrl("/autenticar")
-					.defaultSuccessUrl("/app/indicador")
+					.defaultSuccessUrl("/home.jsp")
 					.failureUrl("/login.jsp?semacesso=true")
 					.usernameParameter("login")
 					.passwordParameter("senha")
