@@ -1,6 +1,9 @@
 package br.com.pmwork.model.entity;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Entity;
@@ -12,13 +15,19 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
-public class Colaborador {
+public class Colaborador implements UserDetails{
 
+	private static final long serialVersionUID = 5995706746652940939L;
+	
 	@Id	
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	
 	@NotNull
 	@NotEmpty
 	private String nome;
@@ -72,13 +81,6 @@ public class Colaborador {
 	public void setDataAdmissao(Date dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}
-
-	public Set<Acesso> getCargo() {
-		return cargo;
-	}
-	public void setCargo(Set<Acesso> cargo) {
-		this.cargo = cargo;
-	}
 		
 	public String getEmail() {
 		return email;
@@ -105,6 +107,10 @@ public class Colaborador {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	
+	public Set<Acesso> getCargo() {
+		return cargo;
 	}
 	@Override
 	public int hashCode() {
@@ -175,6 +181,40 @@ public class Colaborador {
 				return false;
 		} else if (!senha.equals(other.senha))
 			return false;
+		return true;
+	}
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		List<GrantedAuthority> autorizacoes = new ArrayList<GrantedAuthority>();
+		
+		for(Acesso acesso : getCargo()){
+			autorizacoes.add(new SimpleGrantedAuthority(acesso.getCargo()));
+		}
+		
+		return autorizacoes;
+	}
+	@Override
+	public String getPassword() {
+		return senha;
+	}
+	@Override
+	public String getUsername() {
+		return login;
+	}
+	@Override
+	public boolean isAccountNonExpired() {
+		return true;
+	}
+	@Override
+	public boolean isAccountNonLocked() {
+		return true;
+	}
+	@Override
+	public boolean isCredentialsNonExpired() {
+		return true;
+	}
+	@Override
+	public boolean isEnabled() {
 		return true;
 	}
 }

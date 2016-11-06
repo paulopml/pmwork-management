@@ -24,14 +24,14 @@
 	
 						<div class="col-lg-3 group">
 							<label for="dataNascimento">Data de Nascimento</label>
-							<input type="date" class="form-control fa-calendar" id="dataNascimento" name="dataNascimento"  value = "<fmt:formatDate value="${dataNascimento}" pattern="dd-MM-yyyy" />"/>
-				    	<!-- <input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa"> -->
+						<!--	<input type="date" class="form-control" id="dataNascimento" name="dataNascimento"  value = "<fmt:formatDate value="${dataNascimento}" pattern="dd-MM-yyyy" />"/> -->
+				    	 <input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa"> 
 						</div>
 	
 						<div class="col-lg-3 group">
 							<label for="dataAdmissao">Data de Admissão</label>
-							<input type="date" class="form-control fa-calendar" id="dataAdmissao" name="dataAdmissao"  value = "<fmt:formatDate value="${dataAdmissao}" pattern="dd-MM-yyyy" />"/>
-						<!-- <input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa">  -->
+<%-- 							<input type="date" class="form-control" id="dataAdmissao" name="dataAdmissao"  value = "<fmt:formatDate value="${dataAdmissao}" pattern="dd-MM-yyyy" />"/> --%>
+						 <input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa">
 						</div>
 	
 						<div class="col-lg-4 group">
@@ -64,6 +64,7 @@
 	                    </div>
 	                </fieldset>    
 					<input id="id" name="id" type="hidden">	
+					<input type="hidden" id="_csrf" name="_csrf" value="${_csrf.token}">
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>

@@ -96,6 +96,7 @@
 						</div>
 					</fieldset>
 					<input id="id" name="id" type="hidden">	
+					<input type="hidden" id="_csrf" name="_csrf" value="${_csrf.token}">
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>

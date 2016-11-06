@@ -4,4 +4,15 @@
 	<item value="1" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn"/>
 	<item value="194" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
 	<item value="121" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0"/>
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=pmwork/C:\/Users\/paulo\/.m2\/repository\/antlr\/antlr\/2.7.7\/antlr-2.7.7.jar&amp;lt;antlr.debug.misc(ASTFrame.class[ASTFrame&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=pmwork/C:\/Users\/paulo\/.m2\/repository\/org\/javassist\/javassist\/3.18.1-GA\/javassist-3.18.1-GA.jar&amp;lt;javassist.tools.reflect(Compiler.class[Compiler&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=pmwork/C:\/Users\/paulo\/.m2\/repository\/org\/jboss\/jandex\/1.1.0.Final\/jandex-1.1.0.Final.jar&amp;lt;org.jboss.jandex(Main.class[Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=pmwork/C:\/Users\/paulo\/.m2\/repository\/com\/mchange\/c3p0\/0.9.2.1\/c3p0-0.9.2.1.jar&amp;lt;com.mchange.v2.c3p0.test(StatsTest.class[StatsTest&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=pmwork/C:\/Users\/paulo\/.m2\/repository\/javax\/servlet\/jstl\/1.2\/jstl-1.2.jar&amp;lt;org.apache.taglibs.standard.lang.jstl.test(StaticFunctionTests.class[StaticFunctionTests&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=pmwork/C:\/Users\/paulo\/.m2\/repository\/org\/hibernate\/hibernate-core\/4.3.7.Final\/hibernate-core-4.3.7.Final.jar&amp;lt;org.hibernate.internal.util.collections(ArrayHelper.class[ArrayHelper&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=pmwork/src\/main\/java&amp;lt;br.com.pmwork.config{ConfigSeguranca.java[ConfigSeguranca&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="100" key="DIALOG_X_ORIGIN"/>
+			<item value="0" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
 </section>

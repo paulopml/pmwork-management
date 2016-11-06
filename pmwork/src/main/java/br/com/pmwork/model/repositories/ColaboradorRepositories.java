@@ -8,4 +8,5 @@ import br.com.pmwork.model.entity.Colaborador;
 @Repository
 public interface ColaboradorRepositories extends CrudRepository<Colaborador, Long> {
 
+	public Colaborador findOneByLogin(String login);
 }
