@@ -94,10 +94,12 @@ var aplicarListeners = function(){
 	
 	$('.btn-deletar').on('click', function(){
 		var id = $(this).parents('tr').data('id');
+		var csrf = $('#csrf').val();
 		
 		$.ajax({
 			url:  "controleacesso/"+id,
 			type: 'DELETE',
+			headers:{'X-CSRF-TOKEN':csrf},
 			success:function(result){
 				$('tr[data-id="'+id+'"]').remove();
 			}

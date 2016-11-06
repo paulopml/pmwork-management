@@ -27,13 +27,14 @@ public class Colaborador implements UserDetails{
 	@Id	
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	
 	@NotNull
 	@NotEmpty
 	private String nome;
 	
 	@NotNull
 	@NotEmpty
-	@DateTimeFormat(pattern = "dd/MM/yyyy HH:mi:SS")
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dataNascimento;
 	
 	@NotNull

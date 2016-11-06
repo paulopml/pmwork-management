@@ -21,7 +21,7 @@ var aplicatListenerBtnSalvar = function(){
 	$('#btn-salvar').on('click', function(){
 		var url = 'cadastrocolaborador';
 		var dadosColaborador = $('#form-colaborador').serialize();
-		console.log(dadosColaborador);
+		
 		$.post(url, dadosColaborador)
 			.done(function(pagina){
 				$('#section-colaborador').html(pagina);
@@ -64,10 +64,12 @@ var aplicarListeners = function(){
 	
 	$('.btn-deletar').on('click', function(){
 		var id = $(this).parents('tr').data('id');
+		var csrf = $('#csrf').val();
 		
 		$.ajax({
 			url:  "cadastrocolaborador/"+id,
 			type: 'DELETE',
+			headers:{'X-CSRF-TOKEN':csrf},
 			success:function(result){
 				$('tr[data-id="'+id+'"]').remove();
 			}
