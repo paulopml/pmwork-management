@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-<fullyQualifiedTypeName name="br.com.pmwork.exception.AcessoInvalidoException"/>
-<fullyQualifiedTypeName name="br.com.pmwork.exception.ColaboradorInvalidoException"/>
 <fullyQualifiedTypeName name="org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter"/>
 <fullyQualifiedTypeName name="javax.servlet.DispatcherType"/>
 <fullyQualifiedTypeName name="java.util.EnumSet"/>
@@ -47,7 +44,6 @@
 <fullyQualifiedTypeName name="br.com.pmwork.model.entity.Colaborador"/>
 <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="br.com.pmwork.model.repositories.ColaboradorRepositories"/>
 <fullyQualifiedTypeName name="br.com.pmwork.model.servicos.ServicoAutenticacao"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
@@ -57,7 +53,11 @@
 <fullyQualifiedTypeName name="javax.persistence.Temporal"/>
 <fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
 <fullyQualifiedTypeName name="javax.persistence.FetchType"/>
-<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Fase"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="br.com.pmwork.model.nums.StatusAtividade"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.repositories.AtividadeRepositories"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Atividade"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.repositories.FaseRepositories"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Fase"/>
 </qualifiedTypeNameHistroy>

@@ -50,7 +50,7 @@
 							<input id="fase" name="fase" class="form-control">
 						</div>
 						<div class="col-sm-4 group">
-							<label for="justificativa">Descrição</label>
+							<label for="descricao">Descrição</label>
 							<textarea  class="form-control" rows="3" id="descricao" name="descricao"></textarea>	
 						</div>	
 					</fieldset>

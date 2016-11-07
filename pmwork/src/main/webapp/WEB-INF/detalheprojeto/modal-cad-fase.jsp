@@ -4,10 +4,10 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<div class="modal fade" id="modal-cad-atividade" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modal-cad-fase" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog ">
 		<div class="modal-content">
-			<form id="form-atividade" method="post">
+			<form id="form-fase" method="post">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
