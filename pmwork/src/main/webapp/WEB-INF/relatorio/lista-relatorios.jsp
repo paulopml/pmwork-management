@@ -93,7 +93,7 @@
 					<div class="alert alert-info">${mensagemInfo}</div>
 				</div>
 			</c:if>
-			<section id="section-projeto">
+			<section id="section-relatorio">
 				<jsp:include page="tabela-relatorio.jsp"/>
 			</section>
 	</main>

@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
-<fullyQualifiedTypeName name="java.lang.Long"/>
-<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Indicadores"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="br.com.pmwork.exception.AcessoInvalidoException"/>
 <fullyQualifiedTypeName name="br.com.pmwork.exception.ColaboradorInvalidoException"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Temporal"/>
 <fullyQualifiedTypeName name="javax.persistence.Temporal"/>
 <fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
+<fullyQualifiedTypeName name="javax.persistence.FetchType"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Fase"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.nums.StatusAtividade"/>
 </qualifiedTypeNameHistroy>

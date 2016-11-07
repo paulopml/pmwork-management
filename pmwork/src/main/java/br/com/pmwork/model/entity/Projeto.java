@@ -49,21 +49,28 @@ public class Projeto {
 	@NotNull
 	@NotEmpty
 	private Double orcamentoTotal;
+	
 	@NotNull
 	@ManyToMany
 	private Set<Colaborador> gerenteProjeto;
+	
 	@NotNull
 	@Enumerated(EnumType.STRING)
 	private ClassificacaoRisco classificacaoRisco;
+	
 	@ManyToMany
 	private Set<Fase> fase;
+	
 	@NotNull
 	@Enumerated(EnumType.STRING)
 	private Status status;
+	
 	@ManyToMany
 	private Set<Equipe> equipe;
+	
 	@ManyToMany
 	private Set<Indicadores> indicadores;
+	
 	@ManyToMany
 	private Set<Atividade> atividade;
 	
