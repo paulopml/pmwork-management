@@ -11,46 +11,41 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<section class="intro-page">
-							<h3 class="heading">Projeto xxx</h3>
+						<section>
+							<h3 class="heading">Detalhe do projeto</h3>
 						</section>
-						<form id="filter" class="filter">
-							<div class="col-lg-10">
-								<fieldset class="row">
-				
-									<div class="col-lg-12">
-										<legend><i class="glyphicon glyphicon-filter" aria-hidden="true"></i>Filtro</legend>
-									</div>
-				
+						<form id="filter">
+							<div class="col-lg-10 group panel panel-default">
+								<fieldset class="row pn-detalhe">
 									<div class="col-lg-5 group">
 										<label for="">Nome do Projeto</label>
-										<input type="hidden" class="form-control" id="nome">
+										<input type="text" class="form-control" id="nome" disabled value="Teste">
 									</div>
 				
 				
 									<div class="col-lg-2 group">
 										<label for="">Data de início</label>
-										<input type="hidden" class="form-control" id="dataInicio">
+										<input type="text" class="form-control" id="dataInicio" disabled>
 									</div>
 				
 									<div class="col-lg-2 group">
 										<label for="">Data de término</label>
-										<input type="hidden" class="form-control" id="dataTermino">
+										<input type="text" class="form-control" id="dataTermino" disabled>
 									</div>
 				
 									<div class="col-lg-3 group">
 										<label for="">Status</label>
-										<input type="hidden" class="form-control" id="status">
+										<input type="text" class="form-control" id="status" disabled>
 									</div>
 									
 									<div class="col-lg-2 group">
 										<label for="">Risco</label>
-										<input type="hidden" class="form-control" id="classificacaoRisco">
+										<input type="text" class="form-control" id="classificacaoRisco" disabled>
 									</div>
 									
 									<div class="col-lg-4 group">
 										<label for="">Gerente do projeto</label>
-										<input type="hidden" class="form-control" id="gerenteProjeto">	
+										<input type="text" class="form-control" id="gerenteProjeto" disabled>	
 									</div>
 									
 								</fieldset>
@@ -59,7 +54,7 @@
 								<fieldset class="row">
 									<div class="text-right">
 										<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-cad-atividade">Criar atividade</button>						
-										<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-cad-atividade">Criar fase</button>						
+										<button type="button" class="btn btn-success btn-fase" data-toggle="modal" data-target="#modal-cad-fase">Criar fase</button>						
 									</div>
 								</fieldset>
 							</div>
@@ -82,7 +77,7 @@
 			</section>
 	</main>
 		<jsp:include page="modal-cad-atividade.jsp"/>
-		<jsp:include page="modal-cad-fase.jsp"/>
+		<jsp:include page="../fase/modal-cad-fase.jsp"/>
 		<script type="text/javascript" src="${path}/static/js/jquery-2.2.3.min.js"></script>
 		<script type="text/javascript" src="${path}/static/js/projeto.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap.min.js"></script>

@@ -49,7 +49,7 @@
 							<label for="fase">Fase:</label>
 							<input id="fase" name="fase" class="form-control">
 						</div>
-						<div class="col-sm-4 group">
+						<div class="col-sm-12 group">
 							<label for="descricao">Descrição</label>
 							<textarea  class="form-control" rows="3" id="descricao" name="descricao"></textarea>	
 						</div>	

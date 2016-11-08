@@ -76,6 +76,7 @@
 							</fieldset>
 			
 							<div class="text-right">
+								<input type="button" id="btnExport" class="btn btn-default ico-excel" value="Exportar para o Excel">
 								<button type="submit" class="btn btn-primary">Filtrar</button>
 								<button type="button" class="btn btn-default">Limpar</button>
 							</div>
@@ -99,7 +100,7 @@
 	</main>
 		<script type="text/javascript" src="${path}/static/js/jquery-2.2.3.min.js"></script>
 		<script type="text/javascript" src="${path}/static/js/jquery.maskMoney.js"></script>
-		<script type="text/javascript" src="${path}/static/js/projeto.js"></script>
+		<script type="text/javascript" src="${path}/static/js/relatorio.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/jquery.mask.js"></script>
 		<script type="text/javascript" src="${path}/static/bootstrap/js/bootstrap-select.js"></script>
