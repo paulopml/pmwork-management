@@ -1,0 +1,6 @@
+package br.com.pmwork.model.nums;
+
+public enum StatusAtividade {
+
+	BAIXO, MÉDIO, ALTO 
+}

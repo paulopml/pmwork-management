@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
-<fullyQualifiedTypeName name="java.lang.Long"/>
-<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Indicadores"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-<fullyQualifiedTypeName name="br.com.pmwork.exception.AcessoInvalidoException"/>
-<fullyQualifiedTypeName name="br.com.pmwork.exception.ColaboradorInvalidoException"/>
-<fullyQualifiedTypeName name="org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter"/>
-<fullyQualifiedTypeName name="javax.servlet.DispatcherType"/>
-<fullyQualifiedTypeName name="java.util.EnumSet"/>
 <fullyQualifiedTypeName name="javax.servlet.FilterRegistration"/>
 <fullyQualifiedTypeName name="org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.CacheRegionDefinition"/>
 <fullyQualifiedTypeName name="java.beans.PropertyEditorSupport"/>
@@ -28,7 +18,6 @@
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="java.lang.Iterable"/>
 <fullyQualifiedTypeName name="br.com.pmwork.exception.ProjetoInvalidoException"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="br.com.pmwork.model.repositories.ProjetoRepositories"/>
@@ -51,7 +40,6 @@
 <fullyQualifiedTypeName name="br.com.pmwork.model.entity.Colaborador"/>
 <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="br.com.pmwork.model.repositories.ColaboradorRepositories"/>
 <fullyQualifiedTypeName name="br.com.pmwork.model.servicos.ServicoAutenticacao"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
@@ -60,4 +48,16 @@
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Temporal"/>
 <fullyQualifiedTypeName name="javax.persistence.Temporal"/>
 <fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
+<fullyQualifiedTypeName name="javax.persistence.FetchType"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.nums.StatusAtividade"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.repositories.AtividadeRepositories"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Atividade"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.repositories.FaseRepositories"/>
+<fullyQualifiedTypeName name="br.com.pmwork.model.entity.Fase"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="br.com.pmwork.exception.AtividadeInvalidoException"/>
+<fullyQualifiedTypeName name="br.com.pmwork.exception.FaseInvalidoException"/>
 </qualifiedTypeNameHistroy>

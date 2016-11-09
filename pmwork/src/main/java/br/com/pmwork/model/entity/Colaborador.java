@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -44,7 +45,7 @@ public class Colaborador implements UserDetails{
 	
 	private String especialidade;
 	
-	@ManyToMany
+	@ManyToMany(fetch=FetchType.EAGER)
 	private Set<Acesso> cargo;
 	
     private String email;

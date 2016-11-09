@@ -29,6 +29,7 @@ public class ProjetoController {
 	@Autowired private ProjetoRepositories projetoRepositories;
 	@Autowired private ColaboradorRepositories colaboradorRepositories; 
 	@Autowired private IndicadoresRepositories indicadoresRepositories; 
+
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public String listarProjetos(Model model){
@@ -72,5 +73,5 @@ public class ProjetoController {
 	public Projeto buscarProjeto(@PathVariable Long id){
 		Projeto projeto = projetoRepositories.findOne(id);
 		return projeto;
-	}
+	}	
 }
