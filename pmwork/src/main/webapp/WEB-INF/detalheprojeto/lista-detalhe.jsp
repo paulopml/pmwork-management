@@ -73,7 +73,7 @@
 				</div>
 			</c:if>
 			<section id="section-detalhe">
-<%-- 				<jsp:include page="tabela-colaborador.jsp"/> --%>
+ 				<jsp:include page="tabela-atividade.jsp"/>
 			</section>
 	</main>
 		<jsp:include page="modal-cad-atividade.jsp"/>

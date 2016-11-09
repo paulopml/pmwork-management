@@ -4,13 +4,47 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
+<!DOCTYPE HTML>
+<script>
+	
+</script>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">			
+			<div id="div1" class="panel panel-primary" ondrop="drop(event)" ondragover="allowDrop(event)">
+			   <div class="panel-heading">
+					Aberto
+			   </div>
+			  <div class="panel panel-info" draggable="true" ondragstart="drag(event)" id="drag1">
+			    <div class="panel-heading">
+			       <h3 class="panel-title">Atividade 1</h3>
+			    </div>
+			    <div class="panel-body">
+			    	Descrição da atividade ......
+			    </div>
+			  </div>
+			  <div class="panel panel-info" draggable="true" ondragstart="drag(event)" id="drag2">
+			    <div class="panel-heading">
+			       <h3 class="panel-title">Atividade 2</h3>
+			    </div>
+			    <div class="panel-body">
+			    	Descrição da atividade ......
+			    </div>
+			  </div>
+			</div>
+			
+			<div id="div2" class="panel panel-primary" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div class="panel-heading">
+					Em andamento
+				</div>
+			
+			</div>
+			
+			<div id="div3" class="panel panel-primary" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div class="panel-heading">
+					Fechado
+			   </div>
+			</div>
+		</div>
+	</div>
+</div>	

@@ -12,7 +12,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<section class="intro-page">
-							<h1 class="heading">Controle de acesso</h1>
+							<h3 class="heading">Controle de acesso</h3>
 							<p></p>
 						</section>
 						<form id="filter">

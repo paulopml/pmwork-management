@@ -12,10 +12,10 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<section class="intro-page">
-							<h1 class="heading">Relatório</h1>
+							<h3 class="heading">Relatório</h3>
 							<p></p>
 						</section>
-						<form id="filter" class="filter">
+						<form id="filter" class="panel panel-default pnl-filter">
 							<fieldset class="row">
 			
 								<div class="col-lg-12">
