@@ -6,7 +6,7 @@
 
 <div class="modal fade" id="modal-cad-colaborador" tabindex="-1" role="dialog">
 	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
+		<div class="modal-cad-colab">
 			<form id="form-colaborador" method="post">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
@@ -38,7 +38,7 @@
 							<label for="cargo">Cargo</label>
 							<select id="cargo" name="cargo" class="form-control">
 								<c:forEach items="${acessos}" var="acesso">
-									<option value="${acesso.id}">${acesso.cargo}</option>
+									<option value="${acesso.id}">${acesso.regra}</option>
 								</c:forEach>											
 							</select>
 						</div>	

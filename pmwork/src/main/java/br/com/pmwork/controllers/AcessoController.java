@@ -15,9 +15,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import br.com.pmwork.exception.AcessoInvalidoException;
-import br.com.pmwork.exception.IndicadorInvalidoException;
 import br.com.pmwork.model.entity.Acesso;
-import br.com.pmwork.model.entity.Indicadores;
+import br.com.pmwork.model.nums.RegraProjeto;
 import br.com.pmwork.model.repositories.AcessoRepositories;
 
 @Controller
@@ -32,6 +31,7 @@ public class AcessoController {
 		
 		model.addAttribute("titulo", "Acessos");
 		model.addAttribute("acessos", acessos);
+		model.addAttribute("regra", RegraProjeto.values());
 		return "controleacesso/lista-controle-acesso";
 	}
 	@RequestMapping(method = RequestMethod.POST)

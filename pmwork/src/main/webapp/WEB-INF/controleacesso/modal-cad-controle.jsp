@@ -4,9 +4,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<div class="modal fade" id="modal-cad-controle" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
+<div class="modal fade" id="modal-cad-controle" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-cad-acess" >
 			<form id="form-controle" method="post">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
@@ -17,33 +17,19 @@
 				</div>
 				<div class="modal-body">
 					<fieldset class="row">
-						<div class="col-lg-4 group">
+						<div class="col-lg-12 group">
 							<label for="cargo">Nome do cargo</label>
 							<input id="cargo" name="cargo" class="form-control" placeholder="Nome do cargo">
 						</div>
 					</fieldset>
 					<fieldset class="row">
-						<div class="col-lg-3 group permission-column">
-							<label class="checkbox-inline check-10"><input type="checkbox" name="incluirProjetos">Incluir Projetos</label>
-							<label class="checkbox-inline"><input type="checkbox" name="excluirProjetos">Excluir Projetos</label>
-							<label class="checkbox-inline"><input type="checkbox" name="editarProjetos">Editar Projetos</label>
-							<label class="checkbox-inline"><input type="checkbox" name="visualizarProjetos">Visualizar Projetos</label>
-						</div>
-						<div class="col-lg-3 group permission-column">
-							<label class="checkbox-inline check-10"><input type="checkbox" name="manterEquipe">Manter equipe</label>
-							<label class="checkbox-inline"><input type="checkbox" name="cadastrarIndicador">Cadastrar Indicadores</label>
-							<label class="checkbox-inline"><input type="checkbox" name="associarIndicador">Associar Indicadores</label>
-							<label class="checkbox-inline"><input type="checkbox" name="manterColaborador">Manter colaboradores</label>
-						</div>
-						<div class="col-lg-3 group permission-column">
-							<label class="checkbox-inline check-10"><input type="checkbox" name="gerarRelatorios">Gerar relatórios</label>
-							<label class="checkbox-inline"><input type="checkbox" name="controlarAcesso">Controle de acesso</label>
-							<label class="checkbox-inline"><input type="checkbox" name="classificarRisco">Classificar risco</label>
-							<label class="checkbox-inline"><input type="checkbox" name="incluirFase">Incluir fase</label>
-						</div>
-						<div class="col-lg-3 group permission-column">
-							<label class="checkbox-inline check-10"><input type="checkbox" name="manterStatus">Manter status</label>
-							<label class="checkbox-inline"><input type="checkbox" name="manterAtividade">Manter atividades</label>
+						<div class="col-lg-12 group">
+							<label for="regra">Regra de acesso</label>
+							<select id="regra" name="regra" class="form-control">
+								<c:forEach items="${regra}" var="regraacesso">
+									<option value="${regraacesso}">${regraacesso}</option>
+								</c:forEach>											
+							</select>
 						</div>
 					</fieldset>
 					<input id="id" name="id" type="hidden">	

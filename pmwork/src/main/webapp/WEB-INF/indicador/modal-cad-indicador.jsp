@@ -6,7 +6,7 @@
 
 <div class="modal fade" id="modal-cad-indicador" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog ">
-		<div class="modal-content">
+		<div class="modal-cad-ind">
 			<form id="form-indicador" method="post">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
@@ -17,11 +17,11 @@
 				</div>
 				<div class="modal-body">
 					<fieldset class="row">				
-						<div class="col-sm-4 group">
+						<div class="col-lg-12 group">
 							<label for="nomeIndicador">Nome:</label>
 							<input id="nomeIndicador" name="nomeIndicador" class="form-control">
 						</div>	
-						<div class="col-sm-4 group">
+						<div class="col-lg-12 group">
 							<label for=tipoIndicador>Tipo indicador:</label>
 							<input id="tipoIndicador" name="tipoIndicador" class="form-control">
 						</div>	

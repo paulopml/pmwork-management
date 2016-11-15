@@ -46,7 +46,9 @@ public class Colaborador implements UserDetails{
 	private String especialidade;
 	
 	@ManyToMany(fetch=FetchType.EAGER)
-	private Set<Acesso> cargo;
+	private Set<Acesso> regra;
+	
+	private String cargo;
 	
     private String email;
     
@@ -110,8 +112,14 @@ public class Colaborador implements UserDetails{
 		this.senha = senha;
 	}
 	
-	public Set<Acesso> getCargo() {
+	public Set<Acesso> getRegra() {
+		return regra;
+	}	
+	public String getCargo() {
 		return cargo;
+	}
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
 	}
 	@Override
 	public int hashCode() {
@@ -125,6 +133,7 @@ public class Colaborador implements UserDetails{
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((login == null) ? 0 : login.hashCode());
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		result = prime * result + ((regra == null) ? 0 : regra.hashCode());
 		result = prime * result + ((senha == null) ? 0 : senha.hashCode());
 		return result;
 	}
@@ -177,6 +186,11 @@ public class Colaborador implements UserDetails{
 				return false;
 		} else if (!nome.equals(other.nome))
 			return false;
+		if (regra == null) {
+			if (other.regra != null)
+				return false;
+		} else if (!regra.equals(other.regra))
+			return false;
 		if (senha == null) {
 			if (other.senha != null)
 				return false;
@@ -188,8 +202,8 @@ public class Colaborador implements UserDetails{
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		List<GrantedAuthority> autorizacoes = new ArrayList<GrantedAuthority>();
 		
-		for(Acesso acesso : getCargo()){
-			autorizacoes.add(new SimpleGrantedAuthority(acesso.getCargo()));
+		for(Acesso acesso : getRegra()){
+			autorizacoes.add(new SimpleGrantedAuthority(acesso.getRegra()));
 		}
 		
 		return autorizacoes;

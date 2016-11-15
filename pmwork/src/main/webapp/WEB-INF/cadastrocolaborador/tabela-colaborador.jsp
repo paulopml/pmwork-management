@@ -32,8 +32,8 @@
 								<td>${colaboradores.dataAdmissao}</td>
 								<td>${colaboradores.especialidade}</td>
 								<td>
-									<c:forEach items="${colaboradores.cargo}" var="cargos">
-										${cargos.cargo}<br/>
+									<c:forEach items="${colaboradores.regra}" var="cargos">
+										${cargos.regra}<br/>
 									</c:forEach>
 								</td>
 								<td>${colaboradores.email}</td>

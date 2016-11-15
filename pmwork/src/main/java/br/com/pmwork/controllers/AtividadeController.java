@@ -15,17 +15,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import br.com.pmwork.exception.AtividadeInvalidoException;
-import br.com.pmwork.exception.FaseInvalidoException;
-import br.com.pmwork.exception.ProjetoInvalidoException;
 import br.com.pmwork.model.entity.Atividade;
-import br.com.pmwork.model.entity.Fase;
 import br.com.pmwork.model.entity.Projeto;
 import br.com.pmwork.model.nums.ClassificacaoRisco;
 import br.com.pmwork.model.nums.Status;
 import br.com.pmwork.model.repositories.AtividadeRepositories;
 import br.com.pmwork.model.repositories.ColaboradorRepositories;
-import br.com.pmwork.model.repositories.FaseRepositories;
-import br.com.pmwork.model.repositories.IndicadoresRepositories;
 import br.com.pmwork.model.repositories.ProjetoRepositories;
 
 @Controller
@@ -34,7 +29,6 @@ public class AtividadeController {
 
 	@Autowired private ProjetoRepositories projetoRepositories;
 	@Autowired private ColaboradorRepositories colaboradorRepositories; 
-	@Autowired private IndicadoresRepositories indicadoresRepositories; 
 	@Autowired private AtividadeRepositories atividadeRepositories;
 	
 	@RequestMapping(method=RequestMethod.GET)

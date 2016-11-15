@@ -39,7 +39,7 @@
 						<!-- <input type="text" class="form-control" id="dataRealTermino" name="dataRealTermino" placeholder="dd/mm/aaaa">  -->
 						</div>
 						<div class="col-lg-4 group">
-							<label for="cargo">Status</label>
+							<label for="status">Status</label>
 							<select id="status" name="status" class="form-control">
 								<c:forEach items="${status}" var="statuspj">
 									<option value="${statuspj}">${statuspj}</option>
@@ -47,7 +47,7 @@
 							</select>
 						</div>	
 						<div class="col-lg-2 group">
-							<label for="cargo">Risco</label>
+							<label for="classificacaoRisco">Risco</label>
 							<select id="classificacaoRisco" name="classificacaoRisco" class="form-control">
 								<c:forEach items="${classificacaoRisco}" var="risco">
 									<option value="${risco}">${risco}</option>
