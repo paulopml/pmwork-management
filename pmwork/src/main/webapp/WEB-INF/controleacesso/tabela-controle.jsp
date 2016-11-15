@@ -14,6 +14,7 @@
 						<tr>
 							<th>#</th>
 							<th>Tipo de acesso</th>
+							<th>Regra de acesso</th>
 							<th></th>
 							<th></th>
 						</tr>
@@ -23,6 +24,7 @@
 							<tr data-id="${acessos.id}">
 								<th scope="row">${acessos.id}</th>
 								<td>${acessos.cargo}</td>
+								<td>${acessos.regra}</td>
 								<td><button type="button" class="btn-editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td>
 								<td><button type="button" class="btn-deletar"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
 							</tr>

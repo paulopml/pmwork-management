@@ -6,21 +6,9 @@ $(document).ready(function(){
 
 var limparModal = function(){
 	$('#id').val('');
-	$('#incluirProjetos').val('');
-	$('#cadastrarIndicador').val('');
-	$('#controlarAcesso').val('');
-	$('#manterStatus').val('');
-	$('#excluirProjetos').val('');
-	$('#associarIndicador').val('');
-	$('#gerarRelatorios').val('');
-	$('#manterAtividade').val('');
-	$('#editarProjetos').val('');
-	$('#manterEquipe').val('');
-	$('#incluirFase').val('');
-	$('#visualizarProjetos').val('');
-	$('#manterColaborador').val('');
-	$('#classificarRisco').val('');
-	$('#manterEquipe').val('');
+	$('#cargo').val('');
+	$('#regra').val('');
+	
 	
 }
 
@@ -69,21 +57,8 @@ var aplicarListeners = function(){
 		$.get(url)
 			.success(function(acessos){
 				$('#id').val(acessos.id);
-				$('#incluirProjetos').val(acessos.incluirProjetos);
-				$('#cadastrarIndicador').val(acessos.cadastrarIndicador);
-				$('#controlarAcesso').val(acessos.controlarAcesso);
-				$('#manterStatus').val(acessos.manterStatus);
-				$('#excluirProjetos').val(acessos.excluirProjetos);
-				$('#associarIndicador').val(acessos.associarIndicador);
-				$('#gerarRelatorios').val(acessos.gerarRelatorios);
-				$('#manterAtividade').val(acessos.manterAtividade);
-				$('#editarProjetos').val(acessos.editarProjetos);
-				$('#manterEquipe').val(acessos.manterEquipe);
-				$('#incluirFase').val(acessos.incluirFase);
-				$('#visualizarProjetos').val(acessos.visualizarProjetos);
-				$('#manterColaborador').val(acessos.manterColaborador);
-				$('#classificarRisco').val(acessos.classificarRisco);
-				$('#manterEquipe').val(acessos.manterEquipe);
+				$('#cargo').val(acessos.cargo);
+				$('#regra').val(acessos.regra);
 				
 				
 				$('#modal-cad-controle').modal('show');
