@@ -27,6 +27,9 @@ public class ConfigDB {
 		dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/pmwork");
 		dataSource.setUser("pmwork");
 		dataSource.setPassword("tcc2016");
+//		dataSource.setJdbcUrl("jdbc:mysql://br-cdbr-azure-south-b.cloudapp.net:3306/pmwork");
+//		dataSource.setUser("bfb8cef90e3341");
+//		dataSource.setPassword("46c467e5");
 		return dataSource;
 		
 	}
@@ -38,10 +41,10 @@ public class ConfigDB {
 		entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistenceProvider.class);
 		entityManagerFactoryBean.setJpaDialect(hibernateJpaDialect());
 		
-		Properties jpaProterties = new Properties();
-		jpaProterties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
-		jpaProterties.put("hibernate.hbm2ddl.auto", "validate");
-		entityManagerFactoryBean.setJpaProperties(jpaProterties);
+		Properties jpaProperties = new Properties();
+		jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
+		jpaProperties.put("hibernate.hbm2ddl.auto", "update");
+		entityManagerFactoryBean.setJpaProperties(jpaProperties);
 		return entityManagerFactoryBean;
 	}
 	@Bean

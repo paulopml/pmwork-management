@@ -81,7 +81,7 @@ var aplicarListeners = function(){
 	
 	$('.btn-deletar').on('click', function(){
 		var id = $(this).parents('tr').data('id');
-		var csrf = $('#csrf').val();
+		var csrf = $('#_csrf').val();
 		
 		$.ajax({
 			url:  "projetos/"+id,
