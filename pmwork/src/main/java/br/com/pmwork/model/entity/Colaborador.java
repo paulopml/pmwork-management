@@ -1,8 +1,9 @@
 package br.com.pmwork.model.entity;
 
-import java.sql.Date;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -35,12 +36,12 @@ public class Colaborador implements UserDetails{
 	
 	@NotNull
 	@NotEmpty
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
 	private Date dataNascimento;
 	
 	@NotNull
 	@NotEmpty
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	private Date dataAdmissao;
 	
 	private String especialidade;
@@ -233,3 +234,4 @@ public class Colaborador implements UserDetails{
 		return true;
 	}
 }
+

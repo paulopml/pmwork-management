@@ -29,6 +29,7 @@ var aplicatListenerBtnSalvar = function(){
 			})
 			.fail(function(){
 				alert('Erro ao salvar');
+				return false;
 			})
 			.always(function(){
 				$('#modal-cad-colaborador').modal('hide');
@@ -64,7 +65,7 @@ var aplicarListeners = function(){
 	
 	$('.btn-deletar').on('click', function(){
 		var id = $(this).parents('tr').data('id');
-		var csrf = $('#csrf').val();
+		var csrf = $('#_csrf').val();
 		
 		$.ajax({
 			url:  "cadastrocolaborador/"+id,

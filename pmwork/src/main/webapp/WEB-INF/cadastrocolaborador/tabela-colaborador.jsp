@@ -28,8 +28,10 @@
 							<tr data-id="${colaboradores.id}">
 								<th scope="row">${colaboradores.id}</th>
 								<td>${colaboradores.nome}</td>
-								<td>${colaboradores.dataNascimento}</td>
-								<td>${colaboradores.dataAdmissao}</td>
+<%-- 								<td>${colaboradores.dataNascimento.time}</td> --%>
+<%-- 								<td>${colaboradores.dataAdmissao.time}</td> --%>
+								<td><fmt:formatDate value="${colaboradores.dataNascimento}" pattern="dd/MM/yyyy"/></td>
+								<td><fmt:formatDate value="${colaboradores.dataAdmissao}" pattern="dd/MM/yyyy"/></td>
 								<td>${colaboradores.especialidade}</td>
 								<td>
 									<c:forEach items="${colaboradores.regra}" var="cargos">

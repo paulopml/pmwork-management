@@ -1,6 +1,8 @@
 package br.com.pmwork.controllers;
 
+import java.beans.PropertyEditorSupport;
 import java.sql.Date;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 import javax.validation.Valid;
@@ -71,11 +73,27 @@ public class ColaboradorController {
 		return colaboradores;
 	}
 
+//	@InitBinder
+//	public void initBinder(WebDataBinder webDataBinder){
+//		 webDataBinder.registerCustomEditor(Acesso.class, acessoPropertyEditor);
+//		 SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+//		 dateFormat.setLenient(false);
+//		 webDataBinder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
+//	}
+	
 	@InitBinder
-	public void initBinder(WebDataBinder webDataBinder){
-		 webDataBinder.registerCustomEditor(Acesso.class, acessoPropertyEditor);
-		 SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		 dateFormat.setLenient(false);
-		 webDataBinder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
+	public void dateBinder(WebDataBinder binder) {
+		binder.registerCustomEditor(Date.class, new PropertyEditorSupport() {
+		    public void setAsText(String value) {
+		        try {
+		            setValue(new SimpleDateFormat("dd-MM-yyyy").parse(value));
+		        } catch(ParseException e) {
+		            setValue(null);
+		        }
+		    }
+		    public String getAsText() {
+		        return new SimpleDateFormat("dd-MM-yyyy").format((Date) getValue());
+		    }        
+		});
 	}
 }

@@ -30,7 +30,7 @@
 							</select>
 						</div>
 						<div class="col-sm-4 group">
-							<label for=responsavel>Status atividade</label>
+							<label for=responsavel>Responsável</label>
 							<select id="responsavel" name="responsavel" class="form-control">
 								<c:forEach items="${responsavel}" var="responsavelAt">
 									<option value="${responsavelAt.id}">${responsavelAt.nome}</option>
