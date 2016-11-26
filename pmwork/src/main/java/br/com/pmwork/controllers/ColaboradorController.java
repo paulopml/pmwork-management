@@ -73,27 +73,27 @@ public class ColaboradorController {
 		return colaboradores;
 	}
 
-//	@InitBinder
-//	public void initBinder(WebDataBinder webDataBinder){
-//		 webDataBinder.registerCustomEditor(Acesso.class, acessoPropertyEditor);
-//		 SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-//		 dateFormat.setLenient(false);
-//		 webDataBinder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
-//	}
-	
 	@InitBinder
-	public void dateBinder(WebDataBinder binder) {
-		binder.registerCustomEditor(Date.class, new PropertyEditorSupport() {
-		    public void setAsText(String value) {
-		        try {
-		            setValue(new SimpleDateFormat("dd-MM-yyyy").parse(value));
-		        } catch(ParseException e) {
-		            setValue(null);
-		        }
-		    }
-		    public String getAsText() {
-		        return new SimpleDateFormat("dd-MM-yyyy").format((Date) getValue());
-		    }        
-		});
+	public void initBinder(WebDataBinder webDataBinder){
+		 webDataBinder.registerCustomEditor(Acesso.class, acessoPropertyEditor);
+		// SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+		// dateFormat.setLenient(false);
+		// webDataBinder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
 	}
+	
+//	@InitBinder
+//	public void dateBinder(WebDataBinder binder) {
+//		binder.registerCustomEditor(Date.class, new PropertyEditorSupport() {
+//		    public void setAsText(String value) {
+//		        try {
+//		            setValue(new SimpleDateFormat("dd-MM-yyyy").parse(value));
+//		        } catch(ParseException e) {
+//		            setValue(null);
+//		        }
+//		    }
+//		    public String getAsText() {
+//		        return new SimpleDateFormat("dd-MM-yyyy").format((Date) getValue());
+//		    }        
+//		});
+//	}
 }
