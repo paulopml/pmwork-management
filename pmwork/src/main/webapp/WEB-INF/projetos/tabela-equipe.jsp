@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 		<div class="row">
 			<div class="col-lg-8">
-				<table class="table">
+				<table class="table" id="table-equipe">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -16,11 +16,11 @@
 							<th></th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody id="memb-equip">
 						<c:forEach items="${projetos}" var="projetos">
 							<tr data-id="${projetos.id}">
 								<th scope="row">${projetos.id}</th>
-								<td class="membroeqp"></td>
+								<td class="membroeqp">${projetos.equipe}</td>
 								<td><button type="button" class="btn-editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td>
 								<td><button type="button" class="btn-deletar"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
 							</tr>

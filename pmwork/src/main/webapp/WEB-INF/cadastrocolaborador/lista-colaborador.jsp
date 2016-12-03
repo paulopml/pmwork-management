@@ -48,7 +48,7 @@
 								
 								<div class="col-lg-3 group">
 									<label for="">email</label>
-									<input type="text" class="form-control" id="">
+									<input type="email" class="form-control" id="">
 								</div>
 								
 								<div class="col-lg-4 group">

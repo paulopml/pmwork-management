@@ -20,10 +20,10 @@ public class Fase {
 	private String nomeFase;
 	@NotNull
 	@NotEmpty
-	private Date dataInicio;
+	private String dataInicio;
 	@NotNull
 	@NotEmpty
-	private Date dataTermino;
+	private String dataTermino;
 	
 	public Long getId() {
 		return id;
@@ -37,16 +37,16 @@ public class Fase {
 	public void setNomeFase(String nomeFase) {
 		this.nomeFase = nomeFase;
 	}
-	public Date getDataInicio() {
+	public String getDataInicio() {
 		return dataInicio;
 	}
-	public void setDataInicio(Date dataInicio) {
+	public void setDataInicio(String dataInicio) {
 		this.dataInicio = dataInicio;
 	}
-	public Date getDataTermino() {
+	public String getDataTermino() {
 		return dataTermino;
 	}
-	public void setDataTermino(Date dataTermino) {
+	public void setDataTermino(String dataTermino) {
 		this.dataTermino = dataTermino;
 	}
 	@Override

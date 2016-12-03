@@ -19,7 +19,7 @@ public class ConfigSeguranca extends WebSecurityConfigurerAdapter{
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-	//	auth.inMemoryAuthentication().withUser("admin").password("admin").roles("PROJETO");
+	//	auth.inMemoryAuthentication().withUser("admin").password("admin").roles("ADMIN");
 		auth
 			.userDetailsService(servicoAutenticacao)
 			.passwordEncoder(encoder());
@@ -29,7 +29,10 @@ public class ConfigSeguranca extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 			.authorizeRequests()
-				.antMatchers("/app/**").hasRole("PROJETO")
+				.antMatchers("/app/**").hasRole("ADMIN")
+				.antMatchers("/app/projetos", "/app/detalheprojeto").hasRole("EQUIPE")
+				.antMatchers("/app/projetos", "/app/detalheprojeto", "/app/indicador", "/app/relatorio").hasRole("PROJETO")
+				.antMatchers("/app/indicador", "/app/relatorio").hasRole("ALTAADM")
 				.anyRequest().permitAll()
 				.and()
 					.formLogin().loginPage("/login.jsp")

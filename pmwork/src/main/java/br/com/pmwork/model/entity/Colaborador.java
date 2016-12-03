@@ -1,12 +1,11 @@
 package br.com.pmwork.model.entity;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collection;
-import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -16,7 +15,6 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -36,13 +34,11 @@ public class Colaborador implements UserDetails{
 	
 	@NotNull
 	@NotEmpty
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
-	private Date dataNascimento;
+	private String dataNascimento;
 	
 	@NotNull
 	@NotEmpty
-	@DateTimeFormat(pattern = "dd-MM-yyyy")
-	private Date dataAdmissao;
+	private String dataAdmissao;
 	
 	private String especialidade;
 	
@@ -55,6 +51,7 @@ public class Colaborador implements UserDetails{
     
     @NotNull
     @NotEmpty
+    @Column(unique=true)
     private String login;
     
     @NotNull
@@ -73,16 +70,16 @@ public class Colaborador implements UserDetails{
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Date getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-	public Date getDataAdmissao() {
+	public String getDataAdmissao() {
 		return dataAdmissao;
 	}
-	public void setDataAdmissao(Date dataAdmissao) {
+	public void setDataAdmissao(String dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}
 		

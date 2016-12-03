@@ -1,5 +1,5 @@
-$(document).ready(function(){
-	
+n=0;
+$(document).ready(function(){	
 	aplicarListeners();
 	aplicatListenerBtnSalvar();
 	incluirEquipe();
@@ -21,12 +21,23 @@ var limparModal = function(){
 	$('#justificativa').val('');
 }
 var incluirEquipe = function(){
-	$('#btn-incluir').on('click', function(){
-		var membro = $('option.selecionado :selected').text();
-		$("td.membroeqp").append(membro);
-	});
-	
+	 $('#btn-incluir').click(function(){
+		  var valor =   $('[id="equipes"] option:selected').text();
+		    $('#memb-equip').append($('<tr data-id="'+n+1+'">'+
+		                                '<th scope="row"></th>'+
+		                                '<td class="membroeqp">'+valor+'</td>'+
+		                                '<td><button type="button" class="btn-delMenbro">'+
+		                                  '<span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>'             
+		      ));
+		    $('[id="equipes"] option:selected').remove();
+	  });
 }
+$('.btn-delMenbro').click( function(){
+	var id = $(this).parents('tr').data('id');
+	$('tr[data-id="'+id+'"]').remove();
+});
+
+
 var moeda = function(){
 	 $("input.dinheiro").maskMoney({showSymbol:true, symbol:"R$", decimal:",", thousands:"."});
 }

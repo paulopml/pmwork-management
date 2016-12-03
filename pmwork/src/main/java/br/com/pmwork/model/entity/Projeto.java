@@ -31,16 +31,14 @@ public class Projeto {
 	
 	@NotNull
 	@NotEmpty
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
-	private Date dataInicio;
+	private String dataInicio;
 	
 	@NotNull
 	@NotEmpty
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
-	private Date dataTermino;
+	private String dataTermino;
 	
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
-	private Date dataRealTermino;
+	
+	private String dataRealTermino;
 	
 	@NotNull
 	@NotEmpty
@@ -76,8 +74,8 @@ public class Projeto {
 	
 	private String justificativa;
 	
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
-	private Date dataUltAlteracao;
+	
+	private String dataUltAlteracao;
 	
 	public Long getId() {
 		return id;
@@ -90,24 +88,6 @@ public class Projeto {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-	public Date getDataInicio() {
-		return dataInicio;
-	}
-	public void setDataInicio(Date dataInicio) {
-		this.dataInicio = dataInicio;
-	}
-	public Date getDataTermino() {
-		return dataTermino;
-	}
-	public void setDataTermino(Date dataTermino) {
-		this.dataTermino = dataTermino;
-	}
-	public Date getDataRealTermino() {
-		return dataRealTermino;
-	}
-	public void setDataRealTermino(Date dataRealTermino) {
-		this.dataRealTermino = dataRealTermino;
 	}
 	public String getDescricaoEscopo() {
 		return descricaoEscopo;
@@ -164,17 +144,35 @@ public class Projeto {
 	public void setJustificativa(String justificativa) {
 		this.justificativa = justificativa;
 	}
-	public Date getDataUltAlteracao() {
-		return dataUltAlteracao;
-	}
-	public void setDataUltAlteracao(Date dataUltAlteracao) {
-		this.dataUltAlteracao = dataUltAlteracao;
-	}	
 	public ClassificacaoRisco getClassificacaoRisco() {
 		return classificacaoRisco;
 	}
 	public void setClassificacaoRisco(ClassificacaoRisco classificacaoRisco) {
 		this.classificacaoRisco = classificacaoRisco;
+	}	
+	public String getDataInicio() {
+		return dataInicio;
+	}
+	public void setDataInicio(String dataInicio) {
+		this.dataInicio = dataInicio;
+	}
+	public String getDataTermino() {
+		return dataTermino;
+	}
+	public void setDataTermino(String dataTermino) {
+		this.dataTermino = dataTermino;
+	}
+	public String getDataRealTermino() {
+		return dataRealTermino;
+	}
+	public void setDataRealTermino(String dataRealTermino) {
+		this.dataRealTermino = dataRealTermino;
+	}
+	public String getDataUltAlteracao() {
+		return dataUltAlteracao;
+	}
+	public void setDataUltAlteracao(String dataUltAlteracao) {
+		this.dataUltAlteracao = dataUltAlteracao;
 	}
 	@Override
 	public int hashCode() {

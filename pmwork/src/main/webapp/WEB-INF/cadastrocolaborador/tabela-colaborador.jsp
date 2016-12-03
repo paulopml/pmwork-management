@@ -28,16 +28,12 @@
 							<tr data-id="${colaboradores.id}">
 								<th scope="row">${colaboradores.id}</th>
 								<td>${colaboradores.nome}</td>
-<%-- 								<td>${colaboradores.dataNascimento.time}</td> --%>
-<%-- 								<td>${colaboradores.dataAdmissao.time}</td> --%>
-								<td><fmt:formatDate value="${colaboradores.dataNascimento}" pattern="dd/MM/yyyy"/></td>
-								<td><fmt:formatDate value="${colaboradores.dataAdmissao}" pattern="dd/MM/yyyy"/></td>
+								<td>${colaboradores.dataNascimento}</td>
+								<td>${colaboradores.dataAdmissao}</td>
+<%-- 								<td><fmt:formatDate value="${colaboradores.dataNascimento}" pattern="dd/MM/yyyy"/></td> --%>
+<%-- 								<td><fmt:formatDate value="${colaboradores.dataAdmissao}" pattern="dd/MM/yyyy"/></td> --%>
 								<td>${colaboradores.especialidade}</td>
-								<td>
-									<c:forEach items="${colaboradores.regra}" var="cargos">
-										${cargos.regra}<br/>
-									</c:forEach>
-								</td>
+								<td>${colaboradores.cargo}</td>
 								<td>${colaboradores.email}</td>
 								<td><button type="button" class="btn-editar"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></td>
 								<td><button type="button" class="btn-deletar"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>

@@ -4,6 +4,23 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
+<<script type="text/javascript">
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("dataAdmissao").setAttribute("max", today);
+</script>
+
+
 <div class="modal fade" id="modal-cad-colaborador" tabindex="-1" role="dialog">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-cad-colab">
@@ -24,28 +41,28 @@
 	
 						<div class="col-lg-3 group">
 							<label for="dataNascimento">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="dataNascimento" name="dataNascimento"  value = "<fmt:formatDate value="${dataNascimento}" pattern="dd-MM-yyyy" />"/> 
-				    	<!-- <input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa"> -->
+<%--                             <input type="date" class="form-control" id="dataNascimento" name="dataNascimento"  value = "<fmt:formatDate value="${dataNascimento}" pattern="dd-MM-yyyy" />"/>  --%>
+				   			 	<input type="date" min="1900-01-01" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="dd/mm/aaaa">
 						</div>
 	
 						<div class="col-lg-3 group">
 							<label for="dataAdmissao">Data de Admissão</label>
-                            <input type="date" class="form-control" id="dataAdmissao" name="dataAdmissao"  value = "<fmt:formatDate value="${dataAdmissao}" pattern="dd-MM-yyyy" />"/>
-	                	<!-- <input type="text" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa"> -->
+<%--                             <input type="date" class="form-control" id="dataAdmissao" name="dataAdmissao"  value = "<fmt:formatDate value="${dataAdmissao}" pattern="dd-MM-yyyy" />"/> --%>
+	             			   	<input type="date"  max="2017-01-01" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="dd/mm/aaaa">
 						</div>
 	
 						<div class="col-lg-4 group">
 							<label for="cargo">Cargo</label>
 							<select id="cargo" name="cargo" class="form-control">
 								<c:forEach items="${acessos}" var="acesso">
-									<option value="${acesso.id}">${acesso.regra}</option>
+									<option value="${acesso.cargo}">${acesso.cargo}</option>
 								</c:forEach>											
 							</select>
 						</div>	
 										
 						<div class="col-lg-4 group">
 							<label for="email">Email</label>
-							<input type="text" class="form-control" id="email" name="email">
+							<input type="email" class="form-control" id="email" name="email">
 						</div>
 						
 						<div class="col-lg-4 group">
